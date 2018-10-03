@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приложение "Pink"</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Приложение Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="hero">
+        <div class="hero-header">
+          <h1 class="hero-header__text">Конкурс на самое безбашенное путешествие с Pink</h1>
+        </div>
+        <div class="hero-footer">
+          <p class="hero-footer__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        </div>
+      </section>
+
+      <section class="form">
+        <h2 class="visually-hidden">Пожалуйста, заполните форму ниже:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get" class="form__form">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Представьтесь пожалуйста</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="user-surname">ФАМИЛИЯ:
+                  <input class="form__input-text" id="user-surname" type="text" placeholder="Укажите фамилию *">
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-name">ИМЯ:
+                  <input class="form__input-text" id="user-name" type="text" placeholder="Введите ваше имя *">
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-patronymic">ОТЧЕСТВО:
+                  <input class="form__input-text" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" id="selfy-with-shark-id" type="checkbox" name="selfy-with-shark" checked>
+                <label class="form__label" for="selfy-with-shark-id">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="burny-on-beach-id" type="checkbox" name="burny-on-beach" checked>
+                <label class="form__label" for="burny-on-beach-id">Обгорел на пляже</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="saw-chack-norris-id" type="checkbox" name="saw-chack-norris">
+                <label class="form__label" for="saw-chack-norris-id">Видел Чака Норриса</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="bought-souvenirs-id" type="checkbox" name="bought-souvenirs">
+                <label class="form__label" for="bought-souvenirs-id">Накупил сувениров</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="hold-tower-id" type="checkbox" name="hold-tower" checked>
+                <label class="form__label" for="hold-tower-id">Удержал башню</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="crashed-hotel-id" type="checkbox" name="crashed-hotel">
+                <label class="form__label" for="crashed-hotel-id">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Ваши контакты</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="user-tel">НОМЕР ТЕЛЕФОНА
+                  <input class="form__input-text" id="user-tel" type="number" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-email">АДРЕС ПОЧТЫ
+                  <input class="form__input-text" id="user-email" type="email" placeholder="Введите почту *">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="iOS" id="pink-ios-app" type="radio" checked>
+                <label class="form__label" for="pink-ios-app">Pink для iOS</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="Android" id="pink-android-app" type="radio">
+                <label class="form__label" for="pink-android-app">Pink на Android</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="WindowsPhone" id="pink-windows-app" type="radio">
+                <label class="form__label" for="pink-windows-app">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Ваш отзыв</legend>
+            <label class="form__label" for="users-emotion-id">ОПИШИТЕ СВОИ ЭМОЦИИ
+              <textarea class="form__input-textarea" name="users-emotion" id="users-emotion-id" cols="30" rows="10"></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" class="form__submit-button button" value="ОТПРАВИТЬ ФОРМУ">
+        </form>
+        <p class="form__note"><span class="form__note form__note--red">* </span>— ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+      </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+      <a class="main-footer__logo" href="index.html">На главную
+        <img class="main-footer__image" src="http://placehold.it/150x100" width="147" height="40" alt="">
+      </a>
+      <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright">
+        <p class="main-footer__copyright-text">Разработано</p>
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="main-footer__copyright-image" src="http://placehold.it/150x100" width="27" height="34" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
