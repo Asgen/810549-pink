@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение "Pink"</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -14,16 +16,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a href="photo.html" class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -32,11 +34,11 @@
     <main class="page-main">
 
       <section class="hero">
-        <h1 class="vissualy-hidden">Приложение "Pink"</h1>
-        <div class="hero-header">
-          <img class="hero__image" src="http://placehold.it/150x100" alt="Рука держащая телефон с приложением Pink">
+        <h1 class="visually-hidden">Приложение "Pink"</h1>
+        <div class="hero__header hero-header">
+          <img class="hero-header__image" src="img/iphone-hand-mobile@1x.png" alt="Рука держащая телефон с приложением Pink">
         </div>
-        <div class="hero-main">
+        <div class="hero__main hero-main">
           <a class="hero-main__button button" href="#">Скачать приложение</a>
           <div class="hero-main__markets hero-markets">
             <ul class="hero-markets__list markets-list">
@@ -55,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-footer">
+        <div class="hero__footer hero-footer">
           <p class="hero-footer__text">Устали от серости мегаполиса?</p>
           <p class="hero-footer__text">Нам есть, что вам предложить!</p>
         </div>
@@ -76,20 +78,20 @@
             <p class="feature__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="feature__image" src="http://placehold.it/150x100" width="157" height="320" alt="Приложение Pink со смайликом">
+        <img class="feature__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение Pink со смайликом">
       </section>
 
       <section class="reviews">
-        <h2 class="vissualy-hidden">Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__wrapper slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <div class="slider__list">
+            <blockquote class="slider__item">
+              <cite class="slider__author-name">Николай Петров</cite>
+              <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+          <p class="slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
@@ -97,19 +99,19 @@
       </section>
 
       <section class="tariff">
-        <h2 class="vissualy-hidden">Наши тарифы</h2>
+        <h2 class="visually-hidden">Наши тарифы</h2>
         <div class="tariff__wrapper slider">
-          <ul class="tariff__list">
-            <li class="tariff__item">СТАНДАРТ
-              <span class="tariff__item-heading">3,99 USD</span>
+          <ul class="slider__list">
+            <li class="slider__item">СТАНДАРТ
+              <span class="slider__item-heading">3,99 USD</span>
             </li>
-            <li class="tariff__item">Розовый фильт</li>
-            <li class="tariff__item">Смайлики</li>
-            <li class="tariff__item">Комментарии</li>
+            <li class="slider__item">Розовый фильт</li>
+            <li class="slider__item">Смайлики</li>
+            <li class="slider__item">Комментарии</li>
           </ul>
-          <p class="tariff__toggles slider__toggles">
+          <p class="slider__toggles">
             <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
@@ -140,7 +142,7 @@
       </section>
 
       <section class="map">
-        <h2 class="vissualy-hidden">Как нас найти</h2>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <img class="map__image" src="http://placehold.it/150x100" alt="">
       </section>
     </main>
