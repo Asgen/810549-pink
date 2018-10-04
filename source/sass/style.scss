@@ -1,0 +1,66 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "header.blocks/page-header/page-header.scss";
+@import "header.blocks/page-header/__logo/page-header__logo.scss";
+@import "header.blocks/page-header/__logo-image/page-header__logo-image.scss";
+@import "header.blocks/main-nav/main-nav.scss";
+@import "header.blocks/main-nav/__toggle/main-nav__toggle.scss";
+@import "header.blocks/site-list/site-list.scss";
+@import "header.blocks/site-list/__item/site-list__item.scss";
+@import "header.blocks/site-list/__link/site-list__link.scss";
+
+@import "main.blocks/hero/__header/hero__header.scss";
+@import "main.blocks/hero/__main/hero__main.scss";
+@import "main.blocks/hero/__footer/hero__footer.scss";
+
+@import "main.blocks/hero/hero-header/hero-header.scss";
+@import "main.blocks/hero/hero-header/__image/hero-header__image.scss";
+@import "main.blocks/hero/hero-main/hero-main.scss";
+@import "main.blocks/hero/hero-main/__button/hero-main__button.scss";
+@import "main.blocks/hero/hero-markets/hero-markets.scss";
+@import "main.blocks/hero/hero-markets/__text/hero-markets__text.scss";
+@import "main.blocks/hero/hero-footer/__text/hero-footer__text.scss";
+@import "main.blocks/hero/markets-list/markets-list.scss";
+@import "main.blocks/hero/markets-list/__link/markets-list__link.scss";
+
+@import "main.blocks/feature/feature.scss";
+@import "main.blocks/feature/__list/feature__list.scss";
+@import "main.blocks/feature/__item/feature__item.scss";
+@import "main.blocks/feature/__heading/feature__heading.scss";
+@import "main.blocks/feature/__paragraph/feature__paragraph.scss";
+@import "main.blocks/feature/__image/feature__image.scss";
+
+@import "main.blocks/slider/slider.scss";
+@import "main.blocks/slider/__list/slider__list.scss";
+@import "main.blocks/slider/__item/slider__item.scss";
+@import "main.blocks/slider/__author-name/slider__author-name.scss";
+@import "main.blocks/slider/__text/slider__text.scss";
+@import "main.blocks/slider/__toggles/slider__toggles.scss";
+@import "main.blocks/slider/__toggle/slider__toggle.scss";
+@import "main.blocks/slider/__toggle/slider__toggle--current.scss";
+
+
+
+
+
+
+body {
+  max-width: 320px;
+  background: lightblue;
+
+  padding: 0 20px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
