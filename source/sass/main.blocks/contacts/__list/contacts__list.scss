@@ -1,0 +1,4 @@
+.contacts__list {
+  @include list-killer;
+  text-align: center;
+}
