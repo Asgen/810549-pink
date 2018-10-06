@@ -1,0 +1,6 @@
+.main-footer__social-list {
+  display: flex;
+  @include list-killer;
+  margin-bottom: 40px;
+  justify-content: space-around;
+}

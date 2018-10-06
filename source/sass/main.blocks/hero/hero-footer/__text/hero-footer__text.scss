@@ -1,0 +1,10 @@
+.hero-footer__text {
+  @include margin-killer;
+  padding: 56px 38px;
+
+  color: $main-color;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+}

@@ -19,12 +19,15 @@
 
 @import "main.blocks/hero/hero-header/hero-header.scss";
 @import "main.blocks/hero/hero-header/__image/hero-header__image.scss";
+@import "main.blocks/hero/hero-header/__title/hero-header__title.scss";
 @import "main.blocks/hero/hero-main/hero-main.scss";
 @import "main.blocks/hero/hero-main/__button/hero-main__button.scss";
 @import "main.blocks/hero/hero-markets/hero-markets.scss";
 @import "main.blocks/hero/hero-markets/__text/hero-markets__text.scss";
 @import "main.blocks/hero/markets-list/markets-list.scss";
 @import "main.blocks/hero/markets-list/__link/markets-list__link.scss";
+@import "main.blocks/hero/hero-footer/__text/hero-footer__text.scss";
+
 
 @import "main.blocks/feature/feature.scss";
 @import "main.blocks/feature/__list/feature__list.scss";
@@ -57,6 +60,24 @@
 @import "main.blocks/contacts/__link/contacts__link.scss";
 
 @import "main.blocks/map/__container/map__container.scss";
+
+@import "main.blocks/posts/user-posts/user-posts.scss";
+@import "main.blocks/posts/user-post/user-post.scss";
+@import "main.blocks/posts/user-post/__image/user-post__image.scss";
+@import "main.blocks/posts/user-post/__image/user-post__image--panorama.scss";
+@import "main.blocks/posts/user-post/__blockquote/user-post__blockquote.scss";
+@import "main.blocks/posts/user-post/__link/user-post__link.scss";
+
+@import "main.blocks/app/post-maker/post-maker.scss";
+@import "main.blocks/app/__heading/app__heading.scss";
+
+@import "common.blocks/main-footer/main-footer.scss";
+@import "common.blocks/main-footer/__logo/main-footer__logo.scss";
+@import "common.blocks/main-footer/__social-list/main-footer__social-list.scss";
+@import "common.blocks/main-footer/__social-item/main-footer__social-item.scss";
+@import "common.blocks/main-footer/__copyright/main-footer__copyright.scss";
+
+
 
 
 

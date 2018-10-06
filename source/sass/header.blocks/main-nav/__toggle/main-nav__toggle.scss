@@ -1,6 +1,16 @@
 .main-nav__toggle {
   position: absolute;
 
+  width: 50px;
+  height: 24px;
+
+  @include margin-killer;
+
   top: 20px;
   right: 0;
+
+  font-size: 0;
+
+  border: 0;
+  background-image: url("../sass/header.blocks/main-nav/__toggle/icon-menu-burger.svg");
 }
