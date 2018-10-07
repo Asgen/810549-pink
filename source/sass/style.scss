@@ -26,7 +26,9 @@
 @import "main.blocks/hero/hero-markets/__text/hero-markets__text.scss";
 @import "main.blocks/hero/markets-list/markets-list.scss";
 @import "main.blocks/hero/markets-list/__link/markets-list__link.scss";
+@import "main.blocks/hero/hero-footer/hero-footer.scss";
 @import "main.blocks/hero/hero-footer/__text/hero-footer__text.scss";
+@import "main.blocks/hero/hero-footer/__text/hero-footer__text--with-padding.scss";
 
 
 @import "main.blocks/feature/feature.scss";
@@ -70,6 +72,24 @@
 
 @import "main.blocks/app/post-maker/post-maker.scss";
 @import "main.blocks/app/__heading/app__heading.scss";
+
+@import "main.blocks/form/form__form.scss";
+@import "main.blocks/form/__fieldset/form__fieldset.scss";
+@import "main.blocks/form/__fieldset/form__fieldset--gray.scss";
+@import "main.blocks/form/__legend/form__legend.scss";
+@import "main.blocks/form/__list/form__list.scss";
+@import "main.blocks/form/__item/form__item.scss";
+@import "main.blocks/form/__label/form__label.scss";
+@import "main.blocks/form/__label/form__label--align-center.scss";
+@import "main.blocks/form/__label/form__label--dark.scss";
+@import "main.blocks/form/__input-text/form__input-text.scss";
+@import "main.blocks/form/__input-text/form__input-text--margin-lr.scss";
+@import "main.blocks/form/__input-checkbox/form__input-checkbox.scss";
+@import "main.blocks/form/__submit-button/form__submit-button.scss";
+@import "main.blocks/form/__note/form__note.scss";
+@import "main.blocks/form/__note/form__note--red.scss";
+
+
 
 @import "common.blocks/main-footer/main-footer.scss";
 @import "common.blocks/main-footer/__logo/main-footer__logo.scss";

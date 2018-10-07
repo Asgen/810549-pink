@@ -1,0 +1,6 @@
+.form__note {
+  @include margin-killer;
+
+  text-align: center;
+  text-transform: uppercase;
+}

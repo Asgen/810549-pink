@@ -1,0 +1,12 @@
+.form__submit-button {
+  margin: 0 20px;
+
+  border-radius: 5px;
+
+  background-color: #2aab6d;
+}
+
+.form__submit-button:hover {
+  color: #ffffff;
+  background-color: $pink-color;
+}

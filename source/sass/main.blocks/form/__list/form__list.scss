@@ -1,0 +1,4 @@
+.form__list {
+  @include list-killer;
+  padding: 0 20px;
+}
