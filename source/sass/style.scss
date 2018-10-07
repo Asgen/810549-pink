@@ -9,14 +9,11 @@
 @import "header.blocks/site-list/site-list.scss";
 @import "header.blocks/site-list/__item/site-list__item.scss";
 @import "header.blocks/site-list/__link/site-list__link.scss";
-
 @import "common.blocks/content-container/content-container.scss";
 @import "common.blocks/section-heading/section-heading.scss";
-
 @import "main.blocks/hero/__header/hero__header.scss";
 @import "main.blocks/hero/__main/hero__main.scss";
 @import "main.blocks/hero/__footer/hero__footer.scss";
-
 @import "main.blocks/hero/hero-header/hero-header.scss";
 @import "main.blocks/hero/hero-header/__image/hero-header__image.scss";
 @import "main.blocks/hero/hero-header/__title/hero-header__title.scss";
@@ -29,15 +26,12 @@
 @import "main.blocks/hero/hero-footer/hero-footer.scss";
 @import "main.blocks/hero/hero-footer/__text/hero-footer__text.scss";
 @import "main.blocks/hero/hero-footer/__text/hero-footer__text--with-padding.scss";
-
-
 @import "main.blocks/feature/feature.scss";
 @import "main.blocks/feature/__list/feature__list.scss";
 @import "main.blocks/feature/__item/feature__item.scss";
 @import "main.blocks/feature/__heading/feature__heading.scss";
 @import "main.blocks/feature/__paragraph/feature__paragraph.scss";
 @import "main.blocks/feature/__image/feature__image.scss";
-
 @import "main.blocks/slider/slider.scss";
 @import "main.blocks/slider/slider--gray.scss";
 @import "main.blocks/slider/__list/slider__list.scss";
@@ -47,32 +41,26 @@
 @import "main.blocks/slider/__item-element/slider__item-element.scss";
 @import "main.blocks/slider/__item-element/slider__item-element--heading.scss";
 @import "main.blocks/slider/__item-price/slider__item-price.scss";
-
 @import "main.blocks/slider/__author-name/slider__author-name.scss";
 @import "main.blocks/slider/__text/slider__text.scss";
 @import "main.blocks/slider/__toggles/slider__toggles.scss";
 @import "main.blocks/slider/__toggle/slider__toggle.scss";
 @import "main.blocks/slider/__toggle/slider__toggle--current.scss";
-
 @import "main.blocks/tariff/tariff.scss";
 @import "main.blocks/contacts/contacts.scss";
 @import "main.blocks/contacts/__list/contacts__list.scss";
 @import "main.blocks/contacts/__title/contacts__title.scss";
 @import "main.blocks/contacts/__text/contacts__text.scss";
 @import "main.blocks/contacts/__link/contacts__link.scss";
-
 @import "main.blocks/map/__container/map__container.scss";
-
 @import "main.blocks/posts/user-posts/user-posts.scss";
 @import "main.blocks/posts/user-post/user-post.scss";
 @import "main.blocks/posts/user-post/__image/user-post__image.scss";
 @import "main.blocks/posts/user-post/__image/user-post__image--panorama.scss";
 @import "main.blocks/posts/user-post/__blockquote/user-post__blockquote.scss";
 @import "main.blocks/posts/user-post/__link/user-post__link.scss";
-
 @import "main.blocks/app/post-maker/post-maker.scss";
 @import "main.blocks/app/__heading/app__heading.scss";
-
 @import "main.blocks/form/form__form.scss";
 @import "main.blocks/form/__fieldset/form__fieldset.scss";
 @import "main.blocks/form/__fieldset/form__fieldset--gray.scss";
@@ -84,28 +72,14 @@
 @import "main.blocks/form/__label/form__label--dark.scss";
 @import "main.blocks/form/__input-text/form__input-text.scss";
 @import "main.blocks/form/__input-text/form__input-text--margin-lr.scss";
-@import "main.blocks/form/__input-checkbox/form__input-checkbox.scss";
 @import "main.blocks/form/__submit-button/form__submit-button.scss";
 @import "main.blocks/form/__note/form__note.scss";
 @import "main.blocks/form/__note/form__note--red.scss";
-
-
-
 @import "common.blocks/main-footer/main-footer.scss";
 @import "common.blocks/main-footer/__logo/main-footer__logo.scss";
 @import "common.blocks/main-footer/__social-list/main-footer__social-list.scss";
 @import "common.blocks/main-footer/__social-item/main-footer__social-item.scss";
 @import "common.blocks/main-footer/__copyright/main-footer__copyright.scss";
-
-
-
-
-
-
-
-
-
-
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
