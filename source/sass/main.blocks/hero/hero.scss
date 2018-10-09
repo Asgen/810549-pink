@@ -1,0 +1,16 @@
+.hero {
+  &__header {
+    padding: 36px 20px;
+  }
+
+  &__main {
+    padding-top: 25px;
+  }
+
+  &__footer {
+    padding: 45px 20px;
+
+    background-color: #ffffff;
+  }
+
+}

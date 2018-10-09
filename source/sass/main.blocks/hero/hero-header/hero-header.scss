@@ -6,4 +6,18 @@
   background-image: url("../../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__image {
+    padding-top: 110px;
+    vertical-align: bottom;
+  }
+
+  &__title {
+    @include margin-killer;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
 }

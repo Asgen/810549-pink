@@ -4,4 +4,8 @@
   align-items: center;
 
   background-color: $main-color;
+
+  &__button {
+    margin-bottom: 40px;
+  }
 }

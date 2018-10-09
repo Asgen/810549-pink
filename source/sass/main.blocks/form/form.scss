@@ -1,0 +1,116 @@
+.form {
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 45px;
+  }
+
+  &__fieldset {
+    @include margin-killer;
+    margin-bottom: 40px;
+
+    color: $pink-color;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    border: 0;
+  }
+
+  &__fieldset--gray {
+    background-color: $gray-color;
+    padding-bottom: 50px;
+  }
+
+  &__input-text {
+    display: block;
+
+    padding: 20px;
+
+    color: $main-color;
+    font-size: 18px;
+    line-height: 30px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+
+    resize: none;
+  }
+
+  &__input-text::placeholder {
+    color: $main-color;
+  }
+
+  &__input-text--margin-lr {
+    margin: 0 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 28px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    display: block;
+
+    margin-bottom: 5px;
+    padding-left: 20px;
+  }
+
+  &__label--dark {
+    color: $main-color;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-transform: none;
+  }
+
+  &__label--align-center {
+    text-align: center;
+  }
+
+  &__legend {
+    padding: 40px;
+
+    text-align: center;
+    line-height: 18px;
+
+    background-color: $gray-color;
+  }
+
+  &__list {
+    @include list-killer;
+    padding: 0 20px;
+  }
+
+  &__note {
+    @include margin-killer;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__note--red {
+    color: $pink-color;
+  }
+
+  &__submit-button {
+    margin: 0 20px;
+
+    border-radius: 5px;
+
+    background-color: #2aab6d;
+  }
+
+  &__submit-button:hover {
+    color: #ffffff;
+    background-color: $pink-color;
+  }
+}
