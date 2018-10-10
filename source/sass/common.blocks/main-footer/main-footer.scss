@@ -1,0 +1,27 @@
+.main-footer {
+  padding-top: 40px;
+
+  text-align: center;
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    margin-bottom: 40px;
+
+    font-size: 0;
+  }
+
+  &__social-list {
+    display: flex;
+
+    @include list-killer;
+
+    margin-bottom: 40px;
+    justify-content: space-around;
+  }
+}

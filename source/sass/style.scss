@@ -1,0 +1,40 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "button.scss";
+@import "header.blocks/page-header/page-header.scss";
+@import "header.blocks/main-nav/main-nav.scss";
+@import "header.blocks/site-list/site-list.scss";
+@import "common.blocks/content-container/content-container.scss";
+@import "common.blocks/section-heading/section-heading.scss";
+@import "main.blocks/hero/hero.scss";
+@import "main.blocks/hero/hero-header/hero-header.scss";
+@import "main.blocks/hero/hero-main/hero-main.scss";
+@import "main.blocks/hero/hero-markets/hero-markets.scss";
+@import "main.blocks/hero/markets-list/markets-list.scss";
+@import "main.blocks/hero/hero-footer/hero-footer.scss";
+@import "main.blocks/feature/feature.scss";
+@import "main.blocks/slider/slider.scss";
+@import "main.blocks/tariff/tariff.scss";
+@import "main.blocks/contacts/contacts.scss";
+@import "main.blocks/map/map.scss";
+@import "main.blocks/posts/user-posts/user-posts.scss";
+@import "main.blocks/posts/user-post/user-post.scss";
+@import "main.blocks/app/app.scss";
+@import "main.blocks/app/post-maker/post-maker.scss";
+@import "main.blocks/form/form.scss";
+@import "common.blocks/main-footer/main-footer.scss";
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

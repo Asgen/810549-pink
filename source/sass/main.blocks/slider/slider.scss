@@ -1,0 +1,116 @@
+.slider {
+  text-align: center;
+
+  background-color: $white-color;
+
+  &--gray {
+    background-color: $gray-color;
+  }
+
+
+  &__author-name {
+    display: block;
+
+    padding-top: 47px;
+    padding-bottom: 25px;
+
+    color: $black-color;
+
+    @include general-heading-bold;
+    font-style: normal;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0 20px;
+
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  &__item--dark-bg {
+    color: $white-color;
+    background-color: $main-color;
+    border: 0;
+  }
+
+  &__item--no-border {
+    border: 0;
+  }
+
+  &__item-element {
+    display: block;
+
+    padding: 15px 22px;
+
+    @include general-text-lengthy;
+    text-transform: uppercase;
+    text-align: left;
+
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  &__item-element--heading {
+    font-size: $general-heading-size;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__item-price {
+    display: block;
+
+    font-size: $title-font-size;
+    font-weight: 300;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+
+    list-style: none;
+
+    background-color: $white-color;
+  }
+
+  &__row {
+    margin: 0 50px;
+    border: 2px solid pink;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    color: $main-color;
+
+    @include general-text-lengthy;
+  }
+
+  &__toggle {
+    width: 6px;
+    height: 6px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-right: 20px;
+
+    font-size: 0;
+    border: 0;
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+
+  &__toggle--current {
+    background-color: $white-color;
+    border: 3px solid $main-color;
+    box-sizing: content-box;
+  }
+
+  &__toggles {
+    margin: 0;
+    padding: 0;
+  }
+}

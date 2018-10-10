@@ -1,0 +1,44 @@
+.feature {
+  overflow: hidden;
+  background-color: $gray-color;
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
+    color: $black-color;
+
+    @include general-heading-bold;
+  }
+
+  &__image {
+    display: block;
+
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: -45px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+
+    text-align: center;
+    list-style: none;
+  }
+
+  &__paragraph {
+    margin: 0;
+    padding: 0;
+
+    color: $main-color;
+
+    @include general-text-std;
+  }
+}

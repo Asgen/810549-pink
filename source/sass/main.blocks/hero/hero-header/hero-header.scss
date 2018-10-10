@@ -1,0 +1,23 @@
+.hero-header {
+  min-height: 170px;
+
+  box-sizing: border-box;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__image {
+    padding-top: 110px;
+    vertical-align: bottom;
+  }
+
+  &__title {
+    @include margin-killer;
+
+    color: $white-color;
+    font-size: $title-font-size;
+    font-weight: 300;
+    text-align: center;
+  }
+}

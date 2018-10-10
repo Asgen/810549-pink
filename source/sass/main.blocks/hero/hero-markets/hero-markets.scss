@@ -1,0 +1,11 @@
+.hero-markets {
+  &__text {
+    padding-bottom: 35px;
+
+    @include general-text-std;
+    font-weight: 300;
+
+    color: $white-color;
+    text-align: center;
+  }
+}

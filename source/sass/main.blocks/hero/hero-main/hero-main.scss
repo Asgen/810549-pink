@@ -1,0 +1,11 @@
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $main-color;
+
+  &__button {
+    margin-bottom: 40px;
+  }
+}

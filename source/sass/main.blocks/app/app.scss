@@ -1,0 +1,11 @@
+.app {
+  &__heading {
+    @include margin-killer;
+    padding: 40px;
+
+    color: $main-color;
+
+    @include general-text-lengthy;
+    text-align: center;
+  }
+}

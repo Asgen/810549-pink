@@ -1,0 +1,48 @@
+$main-color: #283645;
+$pink-color: #d22856;
+$gray-color: #f2f2f2;
+$white-color: #ffffff;
+$black-color: #000000;
+$green-color: #2aab6d;
+
+$title-font-size: 24px;
+$general-heading-size: 18px;
+$general-text-size: 14px;
+$heading-line-height: 30px;
+$text-line-height: 24px;
+$small-line-height: 18px;
+
+@mixin general-heading-bold {
+  font-size: $general-heading-size;
+  line-height: $heading-line-height;
+  font-weight: bold;
+}
+
+@mixin general-heading-normal {
+  font-size: $general-heading-size;
+  line-height: $heading-line-height;
+  font-weight: normal;
+}
+
+@mixin general-text-std {
+  font-size: $general-text-size;
+  line-height: $text-line-height;
+  font-weight: normal;
+}
+
+@mixin general-text-lengthy {
+  font-size: $general-text-size;
+  line-height: $heading-line-height;
+  font-weight: normal;
+}
+
+@mixin list-killer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin margin-killer {
+  margin: 0;
+  padding: 0;
+}

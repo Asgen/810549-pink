@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+
+  padding-top: 20px;
+  background-color: $main-color;
+
+  &__logo {
+    display: inline-block;
+
+    padding-left: 20px;
+  }
+
+  &__logo-image {
+    vertical-align: top;
+  }
+}

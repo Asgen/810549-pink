@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+
+  padding: 20px 40px;
+
+  color: $white-color;
+  font-weight: bold;
+  font-size: $general-heading-size;
+  line-height: $general-heading-size;
+  text-decoration: none;
+
+  border: solid 3px $white-color;
+  border-radius: 40px;
+
+  background-color: transparent;
+}
+
+.button:hover {
+  color: $pink-color;
+
+  background-color: $white-color;
+}
+
+.button:active {
+  color: rgba($pink-color, 0.3);
+  background-color: $white-color;
+}

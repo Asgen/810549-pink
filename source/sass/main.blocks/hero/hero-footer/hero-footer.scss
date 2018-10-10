@@ -1,0 +1,17 @@
+.hero-footer {
+  min-height: 175px;
+  box-sizing: border-box;
+
+  &__text {
+    @include margin-killer;
+
+    color: $main-color;
+
+    @include general-text-lengthy;
+    text-align: center;
+  }
+
+  &__text--with-padding {
+    padding: 0 15px;
+  }
+}
