@@ -15,12 +15,12 @@
 
     padding: 15px 0;
 
-    color: #ffffff;
+    color: $white-color;
     text-decoration: none;
     text-transform: uppercase;
   }
 
   &__link:hover {
-    color: #d22856;
+    color: $pink-color;
   }
 }

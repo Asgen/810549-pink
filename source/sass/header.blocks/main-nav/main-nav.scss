@@ -1,10 +1,8 @@
 .main-nav {
 
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 32px;
+  @include general-heading-bold;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 
   &__toggle {
     position: absolute;
@@ -19,6 +17,6 @@
     font-size: 0;
 
     border: 0;
-    background-image: url("../sass/header.blocks/main-nav/icon-menu-burger.svg");
+    background-image: url("/sass/header.blocks/main-nav/icon-menu-burger.svg");
   }
 }

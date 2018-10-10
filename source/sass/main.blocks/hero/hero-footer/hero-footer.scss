@@ -6,8 +6,8 @@
     @include margin-killer;
 
     color: $main-color;
-    font-size: 14px;
-    line-height: 30px;
+
+    @include general-text-lengthy;
     text-align: center;
   }
 

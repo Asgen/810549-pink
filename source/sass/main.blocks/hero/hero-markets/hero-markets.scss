@@ -2,11 +2,10 @@
   &__text {
     padding-bottom: 35px;
 
-    font-size: 14px;
-    line-height: 24px;
+    @include general-text-std;
     font-weight: 300;
 
-    color: #ffffff;
+    color: $white-color;
     text-align: center;
   }
 }

@@ -6,8 +6,7 @@
     margin: 0;
     padding: 25px 17px;
 
-    font-size: 14px;
-    line-height: 24px;
+    @include general-text-std;
 
     background-color: $gray-color;
   }

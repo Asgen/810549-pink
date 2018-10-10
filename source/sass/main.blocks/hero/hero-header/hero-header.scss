@@ -3,7 +3,7 @@
 
   box-sizing: border-box;
 
-  background-image: url("../../../img/bg-back-mobile@1x.jpg");
+  background-image: url("/sass/main.blocks/hero/hero-header/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -15,8 +15,8 @@
   &__title {
     @include margin-killer;
 
-    color: #ffffff;
-    font-size: 24px;
+    color: $white-color;
+    font-size: $title-font-size;
     font-weight: 300;
     text-align: center;
   }

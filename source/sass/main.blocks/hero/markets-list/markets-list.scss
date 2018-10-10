@@ -14,13 +14,13 @@
     width: 47px;
     height: 56px;
 
-    color: white;
+    color: $white-color;
     text-decoration: none;
     font-size: 0;
 
     vertical-align: top;
 
-    background-image: url("../../../img/logo-apple.svg");
+    background-image: url("/sass/main.blocks/hero/markets-list/logo-apple.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
