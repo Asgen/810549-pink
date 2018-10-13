@@ -1,5 +1,6 @@
 .hero-header {
   min-height: 170px;
+  width: 100%;
 
   box-sizing: border-box;
 
@@ -8,6 +9,8 @@
   background-size: cover;
 
   &__image {
+    min-height: 286px;
+
     padding-top: 110px;
     vertical-align: bottom;
   }
@@ -20,4 +23,10 @@
     font-weight: 300;
     text-align: center;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-header__image {
+    min-height: 620px;
+ }
 }

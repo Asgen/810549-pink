@@ -1,15 +1,33 @@
 .hero {
-  &__header {
-    padding: 36px 20px;
-  }
+  position: relative;
 
   &__main {
+    position: relative;
+
     padding-top: 25px;
+
+    background-color: $main-color;
   }
 
   &__footer {
     padding: 45px 20px;
 
     background-color: $white-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero__header {
+    position: absolute;
+  }
+
+  .hero__main {
+    width: 300px;
+
+    background-color: transparent;
   }
 }
