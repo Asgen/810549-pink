@@ -10,8 +10,12 @@ $desktop-width: 1200px;
 
 $title-font-size: 24px;
 $general-heading-size: 18px;
+$general-heading-size-tablet: 40px;
+$general-heading-size-desktop: 50px;
 $general-text-size: 14px;
 $heading-line-height: 30px;
+$heading-line-height-tablet: 48px;
+$heading-line-height-desktop: 60px;
 $text-line-height: 24px;
 $small-line-height: 18px;
 
@@ -25,6 +29,18 @@ $small-line-height: 18px;
   font-size: $general-heading-size;
   line-height: $heading-line-height;
   font-weight: normal;
+}
+
+@mixin general-heading-tablet {
+  font-size: $general-heading-size-tablet;
+  line-height: $heading-line-height-tablet;
+  font-weight: 300;
+}
+
+@mixin general-heading-desktop {
+  font-size: $general-heading-size-desktop;
+  line-height: $heading-line-height-desktop;
+  font-weight: 300;
 }
 
 @mixin general-text-std {

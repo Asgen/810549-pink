@@ -1,9 +1,37 @@
 .hero-main {
   display: flex;
+
   flex-direction: column;
-  align-items: center;
+  flex-shrink: 0;
+
+  justify-content: center;
+
+  &__heading {
+    display: none;
+
+    @include margin-killer;
+    padding: 0 40px;
+    margin-bottom: 40px;
+
+    color: white;
+    text-align: center;
+
+    @include general-heading-tablet;
+  }
 
   &__button {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-main__heading {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-main {
+    padding-left: 130px;
   }
 }

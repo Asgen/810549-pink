@@ -1,9 +1,13 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
 
   &__main {
     position: relative;
 
+    padding: 0 20px;
     padding-top: 25px;
 
     background-color: $main-color;
@@ -18,7 +22,7 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    min-height: 620px;
+    height: 864px;
   }
 
   .hero__header {
@@ -27,7 +31,24 @@
 
   .hero__main {
     width: 300px;
+    height: 620px;
+
+    padding-top: 0;
 
     background-color: transparent;
+  }
+
+  .hero__footer {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    height: 1066px;
+  }
+
+  .hero__main {
+    height: 745px;
   }
 }

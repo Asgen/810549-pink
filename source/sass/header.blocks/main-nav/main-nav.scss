@@ -19,3 +19,9 @@
     background-image: url("../img/icon-menu-burger.svg");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

@@ -1,11 +1,31 @@
 .section-heading {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-
   color: $main-color;
-  font-size: title-font-size;
+  font-size: $title-font-size;
   line-height: normal;
   font-weight: 300;
   text-align: center;
+
+  &__text {
+    @include margin-killer;
+    padding-bottom: 30px;
+
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section-heading__text {
+    padding-bottom: 0;
+
+    @include general-heading-tablet;
+  }
+
+  .section-heading__text:last-of-type {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-heading__text {
+    @include general-heading-desktop;
+  }
 }

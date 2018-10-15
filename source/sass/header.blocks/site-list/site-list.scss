@@ -28,3 +28,29 @@
     color: $pink-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    height: 83px;
+
+    padding-right: 130px;
+
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    margin-right: 80px;
+
+    font-weight: normal;
+
+    box-shadow: none;
+  }
+
+   .site-list__item:last-of-type {
+    margin-right: 0;
+
+    border-bottom: none;
+  }
+}
+
