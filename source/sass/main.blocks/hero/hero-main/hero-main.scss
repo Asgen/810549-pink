@@ -28,10 +28,25 @@
   .hero-main__heading {
     display: block;
   }
+
+  .hero-main__button {
+    margin-bottom: 46px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .hero-main {
     padding-left: 130px;
+  }
+
+  .hero-main__heading {
+    @include general-heading-desktop;
+
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .hero-main__button {
+    margin-bottom: 67px;
   }
 }

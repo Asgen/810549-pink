@@ -1,7 +1,11 @@
 .slider {
+  position: relative;
+
   text-align: center;
 
   background-color: $white-color;
+
+  overflow: hidden;
 
   &--gray {
     background-color: $gray-color;
@@ -21,39 +25,16 @@
   }
 
   &__item {
+    width: 300%;
+
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
 
     border-bottom: 2px solid #e5e5e5;
   }
 
-  &__item--dark-bg {
-    color: $white-color;
-    background-color: $main-color;
-    border: 0;
-  }
-
   &__item--no-border {
     border: 0;
-  }
-
-  &__item-element {
-    display: block;
-
-    padding: 15px 22px;
-
-    @include general-text-lengthy;
-    text-transform: uppercase;
-    text-align: left;
-
-    border-left: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
-  }
-
-  &__item-element--heading {
-    font-size: $general-heading-size;
-    font-weight: bold;
-    text-align: center;
   }
 
   &__item-price {
@@ -66,16 +47,15 @@
   &__list {
     margin: 0;
     padding: 0;
-    margin-bottom: 42px;
 
     list-style: none;
 
     background-color: $white-color;
   }
 
-  &__row {
-    margin: 0 50px;
-    border: 2px solid pink;
+  &__slide {
+    float: left;
+    width: 33%;
   }
 
   &__text {
@@ -112,5 +92,159 @@
   &__toggles {
     margin: 0;
     padding: 0;
+  }
+}
+/*------Таблица с тарифами------*/
+.slider__table {
+  display: table;
+  width: 300%;
+
+  margin-left: -445px;
+
+  border-collapse: collapse;
+  background-color: $white-color;
+}
+
+.slider__row {
+  display: table-row;
+}
+
+.slider__cell {
+  display: table-cell;
+  padding: 15px 22px;
+
+  @include general-text-lengthy;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: 2px solid $dark-gray-color;
+}
+
+.slider__cell--heading {
+  font-size: $general-heading-size;
+  font-weight: bold;
+  text-align: center;
+
+  color: $white-color;
+  background-color: $main-color;
+
+  border-top: 0;
+  border-bottom-color: $main-color;
+}
+
+.slider__cell--hidden {
+  border: 0;
+
+  background-color: $gray-color;
+}
+
+/*------Таблица с тарифами конец------*/
+
+@media (min-width: $tablet-width) {
+  .slider__slide {
+    width: 660px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slider__author-name {
+    position: relative;
+
+    padding-top: 44px;
+
+    font-size: $slider-tablet-font-size;
+  }
+
+  .slider__author-name::before {
+    content: "25 лет, водитель трамвая";
+    position: absolute;
+
+    bottom: -7px;
+
+    @include general-text-lengthy;
+    color: $main-color;
+  }
+
+  .slider__text {
+    @include general-heading-normal;
+    color: $main-color;
+  }
+
+  /*------Таблица с тарифами------*/
+  .slider__table {
+    width: 100%;
+    margin-left: 0;
+  }
+  /*------------------------------*/
+}
+
+@media (min-width: $desktop-width) {
+  .slider__text::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+
+    top: 72px;
+    left: 50%;
+
+    margin-left: -40px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.1;
+  }
+
+  .slider__slide {
+    width: 1200px;
+
+    position: relative;
+  }
+
+  .slider__slide::before,
+  .slider__slide::after {
+    content: "";
+    width: 22px;
+    height: 41px;
+
+    position: absolute;
+    left: 130px;
+    top: 50%;
+
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    cursor: pointer;
+  }
+
+  .slider__slide::before {
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .slider__slide::after {
+    left: auto;
+    right: 130px;
+
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .slider__author-name {
+    font-size: $title-font-size;
+  }
+
+  .slider__author-name::before {
+    font-size: $general-heading-size;
+  }
+
+  .slider__text {
+    padding: 0 257px;
+    padding-top: 193px;
+  }
+
+  .slider__toggles {
+    display: none;
   }
 }

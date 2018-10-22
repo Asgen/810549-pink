@@ -26,3 +26,10 @@
   color: rgba($pink-color, 0.3);
   background-color: $white-color;
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: $button-font-size-desktop;
+    padding: 20px 28px;
+  }
+}

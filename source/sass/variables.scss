@@ -1,23 +1,31 @@
 $main-color: #283645;
+$opacity-color: rgba(0, 0, 0, 0.3);
 $pink-color: #d22856;
 $gray-color: #f2f2f2;
+$dark-gray-color: #e5e5e5;
 $white-color: #ffffff;
 $black-color: #000000;
 $green-color: #2aab6d;
 
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
-$title-font-size: 24px;
 $general-heading-size: 18px;
+$slider-tablet-font-size: 20px;
+$title-font-size: 24px;
+$feature-heading-size: 30px;
 $general-heading-size-tablet: 40px;
 $general-heading-size-desktop: 50px;
 $general-text-size: 14px;
 $heading-line-height: 30px;
+$feature-line-height: 36px;
 $heading-line-height-tablet: 48px;
 $heading-line-height-desktop: 60px;
 $text-line-height: 24px;
 $small-line-height: 18px;
+$button-font-size-desktop: 21px;
 
 @mixin general-heading-bold {
   font-size: $general-heading-size;

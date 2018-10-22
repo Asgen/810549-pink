@@ -8,4 +8,25 @@
     color: $white-color;
     text-align: center;
   }
+
+  &__list {
+    @include margin-killer;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-markets__list {
+    margin-bottom: 41px;
+  }
+
+  .hero-markets__text {
+    font-size: $general-heading-size;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-markets__list {
+    margin-bottom: 60px;
+  }
 }

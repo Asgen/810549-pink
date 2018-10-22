@@ -4,14 +4,24 @@
 
   &__text {
     @include margin-killer;
+    padding: 0 35px;
 
     color: $main-color;
 
     @include general-text-lengthy;
     text-align: center;
   }
+}
 
-  &__text--with-padding {
-    padding: 0 15px;
+@media (min-width: $tablet-width) {
+  .hero-footer__text {
+    @include general-heading-normal;
+    padding: 0 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-footer__text {
+    padding: 0 310px;
   }
 }

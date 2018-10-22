@@ -14,19 +14,27 @@
   }
 
   &__footer {
-    padding: 45px 20px;
+    padding: 45px 0;
 
     background-color: $white-color;
+  }
+
+  &__header--inner {
+    padding: 35px 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .hero {
-    height: 864px;
-  }
-
   .hero__header {
     position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .hero__header--inner {
+    position: static;
+
+    padding: 81px 20px;
   }
 
   .hero__main {
@@ -44,11 +52,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .hero {
-    height: 1066px;
+  .hero__main {
+    height: 853px;
   }
 
-  .hero__main {
-    height: 745px;
+  .hero__header--inner {
+    padding: 76px 20px;
+    padding-top: 184px;
   }
 }

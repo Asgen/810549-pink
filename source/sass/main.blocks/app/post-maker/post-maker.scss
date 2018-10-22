@@ -7,3 +7,15 @@
 
   background-color: $gray-color;
 }
+
+.post-maker__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .post-maker {
+    flex-direction: row;
+  }
+}

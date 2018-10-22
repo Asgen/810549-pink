@@ -15,9 +15,10 @@
   &__text {
     @include margin-killer;
     margin-bottom: 28px;
+    padding: 0 40px;
 
     color: $pink-color;
-    font-size: title-font-size;
+    font-size: $title-font-size;
     font-weight: 300;
   }
 
@@ -29,5 +30,24 @@
     color: $main-color;
     font-size: $general-heading-size;
     font-weight: bold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    width: 33%;
   }
 }

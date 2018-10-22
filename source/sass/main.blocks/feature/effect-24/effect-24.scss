@@ -1,0 +1,91 @@
+.effect-24 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect-24 {
+    display: flex;
+
+    background-color: $white-color;
+  }
+
+  .effect-24__timer {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 70px;
+
+    text-align: center;
+    vertical-align: top;
+
+    border: 15px solid $pink-color;
+    border-radius: 50%;
+
+    box-sizing: border-box;
+  }
+
+  .effect-24__time::before {
+    content: "";
+    position: absolute;
+    left: -64px;
+    top: -80px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100%;
+    opacity: 0.3;
+  }
+
+  .effect-24__time {
+    position: relative;
+
+    @include margin-killer;
+
+    color: $pink-color;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+  }
+
+  .effect-24__text-wrapper {
+    width: 295px;
+  }
+
+  .effect-24__heading {
+    @include margin-killer;
+    margin-bottom: 20px;
+
+    font-size: $feature-heading-size;
+    line-height: $feature-line-height;
+  }
+
+  .effect-24__text {
+    @include margin-killer;
+    margin-bottom: 20px;
+
+    color: $main-color;
+
+    @include general-text-std;
+  }
+
+  .effect-24__link {
+    color: $pink-color;
+
+    @include general-text-std;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect-24 {
+    background-color: $gray-color;
+  }
+
+  .effect-24__text-wrapper {
+    width: 525px;
+  }
+
+  .effect-24__text,
+  .effect-24__link {
+    @include general-heading-normal;
+  }
+}

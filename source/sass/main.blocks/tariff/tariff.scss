@@ -3,3 +3,15 @@
 
   background-color: $gray-color;
 }
+
+@media (min-width: $tablet-width) {
+  .tariff {
+    padding: 50px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff {
+    padding: 50px 130px;
+  }
+}

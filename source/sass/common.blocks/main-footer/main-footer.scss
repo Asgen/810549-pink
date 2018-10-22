@@ -1,27 +1,106 @@
 .main-footer {
-  padding-top: 40px;
+  display: none;
 
-  text-align: center;
+  padding: 40px 0;
 
-  &__copyright {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__logo {
-    display: inline-block;
-
-    margin-bottom: 40px;
-
-    font-size: 0;
-  }
+  justify-content: space-between;
 
   &__social-list {
     display: flex;
 
     @include list-killer;
+  }
 
-    margin-bottom: 40px;
-    justify-content: space-around;
+  &__social-item {
+    width: 46px;
+    height: 46px;
+
+    margin-right: 15px;
+
+    background-color: pink;
+  }
+}
+
+.main-footer--inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 284px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__logo {
+  width: 147px;
+  height: 40px;
+  display: inline-block;
+
+  padding-left: 20px;
+
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.main-footer__logo:hover {
+  background-image: url("../img/logo-pink-blue-mobile-hover.svg");
+}
+
+.main-footer__logo:active {
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  opacity: 0.3;
+}
+
+.main-footer__copyright {
+  position: relative;
+
+  padding-right: 42px;
+}
+
+.main-footer__copyright::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+
+  right: 0;
+  top: -5px;
+
+  background-image: url("../img/logo-htmlacademy-pink.svg");
+}
+
+.main-footer__copyright:hover::before {
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+.main-footer__copyright:active::before {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+
+    height: auto;
+
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__logo {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+  }
+
+  .main-footer__logo:hover {
+    background-image: url("../img/logo-pink-blue-desktop-hover.svg");
+  }
+
+  .main-footer__logo:active {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+    opacity: 0.3;
   }
 }

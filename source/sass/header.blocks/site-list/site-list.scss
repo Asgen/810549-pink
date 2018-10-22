@@ -47,10 +47,13 @@
     box-shadow: none;
   }
 
-   .site-list__item:last-of-type {
+  .site-list__item:last-of-type {
     margin-right: 0;
 
     border-bottom: none;
   }
-}
 
+  .site-list__link {
+    text-transform: none;
+  }
+}
