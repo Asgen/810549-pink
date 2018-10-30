@@ -8,6 +8,10 @@
   .content-container {
     width: $tablet-width;
   }
+
+  .content-container--flex {
+    display: flex;
+  }
 }
 
 @media (min-width: $desktop-width) {

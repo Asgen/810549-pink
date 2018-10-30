@@ -31,41 +31,46 @@
           </ul>
         </nav>
       </header>
+    </div>
 
       <main class="page-main">
 
         <section class="hero">
           <h1 class="visually-hidden">Приложение "Pink"</h1>
           <div class="hero__header hero-header">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
-              <img class="hero-header__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Рука держащая телефон с приложением Pink">
-            </picture>
-          </div>
-          <div class="hero__main hero-main">
-            <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
-            <a class="hero-main__button button" href="#">Скачать приложение</a>
-            <div class="hero-main__markets hero-markets">
-              <ul class="markets-list hero-markets__list">
-                <li class="markets-list__item">
-                  <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
-                </li>
-                <li class="markets-list__item">
-                  <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
-                </li>
-                <li class="markets-list__item">
-                  <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
-                </li>
-              </ul>
-              <div class="hero-markets__text">
-                Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
-              </div>
+            <div class="content-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
+                <img class="hero-header__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Рука держащая телефон с приложением Pink">
+              </picture>
             </div>
           </div>
-          <div class="hero__footer section-heading">
-            <p class="section-heading__text">Устали от серости мегаполиса?</p>
-            <p class="section-heading__text">Нам есть, что вам предложить!</p>
+          <div class="content-container">
+            <div class="hero__main hero-main">
+              <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
+              <a class="hero-main__button button" href="#">Скачать приложение</a>
+              <div class="hero-main__markets hero-markets">
+                <ul class="markets-list hero-markets__list">
+                  <li class="markets-list__item">
+                    <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
+                  </li>
+                  <li class="markets-list__item">
+                    <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
+                  </li>
+                  <li class="markets-list__item">
+                    <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
+                  </li>
+                </ul>
+                <div class="hero-markets__text">
+                  Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
+                </div>
+              </div>
+            </div>
+            <div class="hero__footer section-heading">
+              <p class="section-heading__text">Устали от серости мегаполиса?</p>
+              <p class="section-heading__text">Нам есть, что вам предложить!</p>
+            </div>
           </div>
         </section>
 
@@ -91,44 +96,48 @@
                 <img class="feature__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Pink со смайликом">
             </picture>
           </div>
-          <div class="feature__24 effect-24">
-            <div class="effect-24__timer">
-              <span class="effect-24__time">24</span>
-            </div>
-            <div class="effect-24__text-wrapper">
-              <h3 class="effect-24__heading">Эффект на 24 часа!</h3>
-              <p class="effect-24__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-              <a href="#" class="effect-24__link">Узнать больше об исследовании</a>
+          <div class="effect-24__wrapper">
+            <div class="feature__24 effect-24">
+              <div class="effect-24__timer">
+                <span class="effect-24__time">24</span>
+              </div>
+              <div class="effect-24__text-wrapper">
+                <h3 class="effect-24__heading"><span class="effect-24__heading-span">Эффект</span> на 24 часа!</h3>
+                <p class="effect-24__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                <a href="#" class="effect-24__link">Узнать больше об исследовании</a>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="reviews">
-          <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews__wrapper slider">
-            <div class="slider__list">
-              <blockquote class="slider__item slider__item--no-border">
-                <div class="slider__slide">
-                  <cite class="slider__author-name">Николай Петров</cite>
-                  <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </div>
-                <div class="slider__slide">
-                  <cite class="slider__author-name">Николай Петров</cite>
-                  <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </div>
-                <div class="slider__slide">
-                  <cite class="slider__author-name">Николай Петров</cite>
-                  <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </div>
-              </blockquote>
+        <div class="content-container">
+          <section class="reviews">
+            <h2 class="visually-hidden">Отзывы о нас</h2>
+            <div class="reviews__wrapper slider">
+              <div class="slider__list">
+                <blockquote class="slider__item slider__item--no-border">
+                  <div class="slider__slide">
+                    <cite class="slider__author-name">Николай Петров</cite>
+                    <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </div>
+                  <div class="slider__slide">
+                    <cite class="slider__author-name">Николай Петров</cite>
+                    <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </div>
+                  <div class="slider__slide">
+                    <cite class="slider__author-name">Николай Петров</cite>
+                    <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  </div>
+                </blockquote>
+              </div>
+              <p class="slider__toggles">
+                <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                <button class="slider__toggle" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+              </p>
             </div>
-            <p class="slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
-            </p>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <section class="tariff">
           <h2 class="visually-hidden">Наши тарифы</h2>
@@ -136,63 +145,68 @@
             <div class="slider__table">
               <div class="slider__row">
                 <div class="slider__cell slider__cell--hidden"></div>
-                <div class="slider__cell slider__cell--heading">База</div>
-                <div class="slider__cell slider__cell--heading">Стандарт</div>
-                <div class="slider__cell slider__cell--heading">Анлим</div>
+                <div class="slider__cell slider__cell--heading">База<br>
+                  <span class="slider__heading-price">1,99 usd</span>
+                </div>
+                <div class="slider__cell slider__cell--heading">Стандарт<br>
+                  <span class="slider__heading-price">3,99 usd</span>
+                </div>
+                <div class="slider__cell slider__cell--heading">Анлим<br>
+                  <span class="slider__heading-price">9,99 usd</span>
+                </div>
               </div>
               <div class="slider__row">
-                <div class="slider__cell">Розовый</div>
-                <div class="slider__cell">ок</div>
-                <div class="slider__cell">ок</div>
-                <div class="slider__cell">ок</div>
+                <div class="slider__cell">Розовый фильтр</div>
+                <div class="slider__cell slider__cell--icon-yes"></div>
+                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view1"></div>
+                <div class="slider__cell slider__cell--icon-yes"></div>
               </div>
               <div class="slider__row">
                 <div class="slider__cell">Смайлики</div>
-                <div class="slider__cell">нет</div>
-                <div class="slider__cell">ок</div>
-                <div class="slider__cell">ок</div>
+                <div class="slider__cell slider__cell--icon-no"></div>
+                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view2"></div>
+                <div class="slider__cell slider__cell--icon-yes"></div>
               </div>
               <div class="slider__row">
                 <div class="slider__cell">Комментарии</div>
-                <div class="slider__cell">нет</div>
-                <div class="slider__cell">нет</div>
-                <div class="slider__cell">ок</div>
+                <div class="slider__cell slider__cell--icon-no"></div>
+                <div class="slider__cell slider__cell--icon-no slider__cell--mobile-view3"></div>
+                <div class="slider__cell slider__cell--icon-yes"></div>
               </div>
             </div>
-            <p class="slider__toggles">
+            <p class="slider__toggles slider__toggles--hidden">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--current" type="button">2</button>
               <button class="slider__toggle" type="button">3</button>
             </p>
           </div>
-
-          <div></div>
-
         </section>
 
-        <section class="contacts">
-          <h2 class="section-heading">Остались вопросы?<br> Свяжитесь с нами!</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title">Звоните:</b>
-              <p class="contacts__text">
-                <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-              </p>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Пишите:</b>
-              <p class="contacts__text">
-                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b>
-              <p class="contacts__text">
-                ул.Большая конюшенная, 19/8
-              </p>
-            </li>
-          </ul>
-        </section>
+        <div class="content-container">
+          <section class="contacts">
+            <h2 class="section-heading">Остались вопросы?<br> Свяжитесь с нами!</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <b class="contacts__title">Звоните:</b>
+                <p class="contacts__text">
+                  <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                </p>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Пишите:</b>
+                <p class="contacts__text">
+                  <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Приезжайте в гости:</b>
+                <p class="contacts__text">
+                  ул.Большая конюшенная, 19/8
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
@@ -200,25 +214,27 @@
         </section>
       </main>
 
-      <footer class="main-footer">
-        <a class="main-footer__logo" aria-label="Логотип Pink">
-        </a>
-        <div class="main-footer__socail-wrapper">
-          <ul class="main-footer__social-list">
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link" href="#vk" aria-label="Мы Вконтакте"></a>
-            </li>
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link href="#fb" aria-label="Мы в Фэйсбук"></a>
-            </li>
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link href="#tweet" aria-label="Мы в Твиттере"></a>
-            </li>
-          </ul>
-        </div>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-        </a>
-      </footer>
-    </div>
+      <div class="content-container">
+        <footer class="main-footer">
+          <a class="main-footer__logo" aria-label="Логотип Pink">
+          </a>
+          <div class="main-footer__socail-wrapper">
+            <ul class="main-footer__social-list">
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link" href="#vk" aria-label="Мы Вконтакте"></a>
+              </li>
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link href="#fb" aria-label="Мы в Фэйсбук"></a>
+              </li>
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link href="#tweet" aria-label="Мы в Твиттере"></a>
+              </li>
+            </ul>
+          </div>
+          <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          </a>
+        </footer>
+      </div>
+
   </body>
 </html>

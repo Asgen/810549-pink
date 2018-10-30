@@ -1,6 +1,7 @@
 .hero-header {
   min-height: 170px;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
 
   box-sizing: border-box;
 
@@ -14,7 +15,10 @@
   }
 
   &__image {
+    display: block;
+
     padding-top: 110px;
+
     vertical-align: bottom;
   }
 
@@ -23,6 +27,7 @@
 
     color: $white-color;
     font-size: $title-font-size;
+    line-height: $title-line-height-28;
     font-weight: 300;
     text-align: center;
   }
@@ -30,6 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .hero-header {
+    width: 100%;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -39,12 +46,21 @@
   }
 
   .hero-header__title {
+    margin: 0 auto;
+
     @include general-heading-desktop;
   }
 
+  .hero-header__title--photo {
+    max-width: 658px;
+  }
+
+  .hero-header__title--form {
+    max-width: 500px;
+  }
+
   .hero-header__image {
-    padding-top: 75px;
-    margin-left: -20px;
+    padding-top: 72px;
   }
 }
 
@@ -60,6 +76,11 @@
   }
 
   .hero-header__image {
-    padding-top: 209px;
+    padding-top: 208px;
+    padding-left: 146px;
+  }
+
+  .hero-header__title--form {
+    max-width: 750px;
   }
 }

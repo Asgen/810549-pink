@@ -31,129 +31,164 @@
           </ul>
         </nav>
       </header>
+    </div>
 
-      <main class="page-main">
+    <main class="page-main">
 
-        <section class="hero">
-          <div class="hero__header hero__header--inner hero-header">
-            <h1 class="hero-header__title">Фотографии пользователей</h1>
-          </div>
-          <div class="hero-footer hero__footer">
+      <section class="hero">
+        <div class="hero__header hero__header--photo hero-header">
+          <h1 class="hero-header__title hero-header__title--photo">Фотографии пользователей</h1>
+        </div>
+        <div class="content-container">
+          <div class="hero-footer hero__footer hero__footer--inner">
             <p class="hero-footer__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div class="content-container">
         <section class="posts">
           <h2 class="visually-hidden">Недавние посты</h2>
           <ul class="posts__list user-posts">
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image user-post__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+                  <img class="user-post__image user-post__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote user-post__blockquote--panorama">
                 <cite class="user-post__name">Анна
                   <span class="user-post__time">(5 минут назад)</span>
                 </cite>
-                <p class="user-post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__comment user-post__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="user-post__likes user-post__likes--panorama">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Белая машина стоит в ангаре">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Левон
                   <span class="user-post__time">(5 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Антон
                   <span class="user-post__time">(12 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Соседи будут рады!</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Панорамное окно в здании">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Борис
                   <span class="user-post__time">(20 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча, фруктовый рынок в шатре">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Сергей
                   <span class="user-post__time">(25 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Самая кубанская в мире!</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Ноги свешиваются с вершины горы">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Максим
                   <span class="user-post__time">(40 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Где снег-то?</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
               <a class="user-post__link" href="#">
-                <img class="user-post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крылья самолета на фоне неба">
+                </picture>
               </a>
               <blockquote class="user-post__blockquote">
                 <cite class="user-post__name">Надежда
                   <span class="user-post__time">(45 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Всем GM и взаимные лайки!</p>
-                <p class="user-post__likes"></p>
+                <p class="user-post__likes">Нравится:</p>
               </blockquote>
             </li>
           </ul>
         </section>
+      </div>
 
-        <section class="app">
-          <h3 class="app__heading">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
-          <div class="app__feature post-maker">
-            <img class="app__image post-maker__image" src="img/photo-road-desktop@1x.jpg" width="280" height="374" alt="Снежная дорога">
+      <section class="app">
+        <h3 class="app__heading">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
+        <div class="app__feature post-maker">
+          <div class="content-container content-container--flex">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img class="app__image post-maker__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Снежная дорога">
+            </picture>
             <div class="post-maker__wrapper">
               <div class="app__filters post-filters">
                 <ul class="app__list">
-                  <li class="app__filter">Обрезка
-                    <label class="app__label active-filter" for="range-cut">
-                      <input class="app__input" type="range" id="range-cut">
-                    </label>
+                  <li class="app__filter">
+                    <label class="app__label active-filter" for="range-cut"><span class="visually-hidden">Обрезка</span></label>
+                    <input class="app__input app__input--active " type="range" id="range-cut">
                   </li>
-                  <li class="app__filter">Заливка
-                    <label class="app__label" for="range-fill">
-                      <input class="app__input" type="range" id="range-fill">
-                    </label>
+                  <li class="app__filter">
+                    <label class="app__label" for="range-fill"><span class="visually-hidden">Заливка</span></label>
+                    <input class="app__input" type="range" id="range-fill">
                   </li>
-                  <li class="app__filter">Контрастность
-                    <label class="app__label" for="range-contrast">
-                      <input class="app__input" type="range" id="range-contrast">
-                    </label>
+                  <li class="app__filter">
+                    <label class="app__label" for="range-contrast"><span class="visually-hidden">Контрастность</span></label>
+                    <input class="app__input" type="range" id="range-contrast">
                   </li>
                 </ul>
               </div>
@@ -161,22 +196,24 @@
               <button class="app__button button" type="button">Отмена</button>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
+    <div class="content-container">
       <footer class="main-footer main-footer--inner">
         <a class="main-footer__logo" aria-label="Логотип Pink">
         </a>
         <div class="main-footer__socail-wrapper">
-          <ul class="main-footer__social-list">
+          <ul class="main-footer__social-list main-footer__social-list--inner">
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#vk" aria-label="Мы Вконтакте"></a>
             </li>
             <li class="main-footer__social-item">
-              <a class="main-footer__social-link href="#fb" aria-label="Мы в Фэйсбук"></a>
+              <a class="main-footer__social-link" href="#fb" aria-label="Мы в Фэйсбук"></a>
             </li>
             <li class="main-footer__social-item">
-              <a class="main-footer__social-link href="#tweet" aria-label="Мы в Твиттере"></a>
+              <a class="main-footer__social-link" href="#tweet" aria-label="Мы в Твиттере"></a>
             </li>
           </ul>
         </div>

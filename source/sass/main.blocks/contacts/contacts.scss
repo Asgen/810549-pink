@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 0;
+  padding-top: 40px;
   background-color: $white-color;
 
   &__link {
@@ -9,45 +9,92 @@
 
   &__list {
     @include list-killer;
+
+    padding-top: 35px;
+    margin-bottom: 40px;
+
     text-align: center;
+  }
+
+  &__item {
+    margin-bottom: 25px;
   }
 
   &__text {
     @include margin-killer;
-    margin-bottom: 28px;
     padding: 0 40px;
 
     color: $pink-color;
     font-size: $title-font-size;
+    line-height: $title-line-height;
     font-weight: 300;
   }
 
   &__title {
     display: inline-block;
 
-    margin-bottom: 10px;
-
     color: $main-color;
     font-size: $general-heading-size;
+    line-height: $general-line-height;
     font-weight: bold;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 47px;
+  }
+
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
+
+    padding-top: 45px;
+    margin-bottom: 0;
 
     justify-content: center;
   }
 
   .contacts__item {
     width: 50%;
+
+    margin-bottom: 46px;
+  }
+
+  .contacts__item:last-of-type {
+    margin-bottom: 28px;
+  }
+
+  .contacts__title {
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 64px;
+  }
+
+  .contacts__list {
+    padding: 0 120px;
+    padding-top: 56px;
+  }
+
   .contacts__item {
     width: 33%;
+
+    margin-bottom: 0;
+  }
+
+  .contacts__item:last-of-type {
+    margin-bottom: 5px;
+  }
+
+  .contacts__item:nth-of-type(2) {
+    order: 1;
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
   }
 }

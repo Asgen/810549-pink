@@ -1,6 +1,15 @@
 .feature {
   overflow: hidden;
   background-color: $gray-color;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
 
   &__heading {
     margin: 0;
@@ -17,17 +26,21 @@
 
     margin: 0 auto;
     margin-top: 5px;
-    margin-bottom: -45px;
+    margin-bottom: -42px;
   }
 
   &__item {
+    margin-bottom: 27px;
+  }
+
+  &__item:last-of-type {
     margin-bottom: 40px;
   }
 
   &__list {
     margin: 0;
-    padding: 0;
-    padding-top: 50px;
+    padding: 0 30px;
+    padding-top: 36px;
 
     text-align: center;
     list-style: none;
@@ -45,11 +58,14 @@
 
 @media (min-width: $tablet-width) {
   .feature__wrapper {
+    width: 660px;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
 
     padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .feature__image {
@@ -60,26 +76,42 @@
   }
 
   .feature__list {
-    width: 305px;
+    width: 310px;
+    padding: 0;
+    padding-top: 72px;
+
+    box-sizing: border-box;
 
     text-align: left;
   }
 
+  .feature__item {
+    margin-bottom: 30px;
+  }
+
   .feature__24 {
-    padding: 60px 20px;
+    padding: 0;
+    padding-top: 100px;
+    padding-right: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feature__wrapper {
+    width: 1200px;
+
     padding: 0 130px;
 
     flex-direction: row;
+
+    box-sizing: border-box;
   }
 
   .feature__list {
     width: 100%;
     display: flex;
+
+    padding-top: 96px;
 
     text-align: center;
 
@@ -87,9 +119,10 @@
   }
 
   .feature__item {
-    width: 33.3%;
+    width: 300px;
 
-    margin-right: 90px;
+    margin-right: 20px;
+    padding: 0 31px;
   }
 
   .feature__item:last-of-type {
@@ -99,11 +132,15 @@
   .feature__image {
     width: 292px;
     height: 302px;
+
+    margin-top: 0;
   }
 
   .feature__heading {
     font-size: $feature-heading-size;
-    line-height: $feature-line-height;
+    line-height: $title-line-height;
+
+    margin-bottom: 24px;
   }
 
   .feature__paragraph {

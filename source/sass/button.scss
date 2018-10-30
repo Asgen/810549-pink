@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
 
-  padding: 20px 35px;
+  padding: 16px 35px;
 
   color: $white-color;
   font-weight: bold;
@@ -30,6 +30,6 @@
 @media (min-width: $desktop-width) {
   .button {
     font-size: $button-font-size-desktop;
-    padding: 20px 28px;
+    padding: 15px 30px;
   }
 }

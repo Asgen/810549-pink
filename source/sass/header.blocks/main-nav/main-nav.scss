@@ -11,12 +11,21 @@
 
     @include margin-killer;
     top: 20px;
-    right: 10px;
+    right: 20px;
 
     font-size: 0;
 
     border: 0;
+    background-color: inherit;
     background-image: url("../img/icon-menu-burger.svg");
+
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 44px;
   }
 }
 

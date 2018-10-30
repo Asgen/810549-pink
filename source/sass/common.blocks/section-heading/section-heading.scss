@@ -1,13 +1,14 @@
 .section-heading {
+  @include margin-killer;
   color: $main-color;
   font-size: $title-font-size;
-  line-height: normal;
+  line-height: $heading-line-height;
   font-weight: 300;
   text-align: center;
 
   &__text {
     @include margin-killer;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 }
 
@@ -21,7 +22,7 @@
   }
 
   .section-heading__text:last-of-type {
-    padding: 0 20px;
+    padding: 0 40px;
   }
 }
 

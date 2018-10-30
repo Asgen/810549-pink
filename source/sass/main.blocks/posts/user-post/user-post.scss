@@ -1,9 +1,11 @@
 .user-post {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   &__blockquote {
     margin: 0 20px;
     padding: 25px 17px;
+    padding-top: 18px;
+    padding-bottom: 23px;
 
     @include general-text-std;
 
@@ -29,11 +31,28 @@
 
     text-align: center;
   }
+
+  &__time {
+    font-size: $user-post-time-font-size;
+
+    text-transform: uppercase;
+  }
+
+  &__comment {
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+  &__likes {
+    @include margin-killer;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .user-post {
     width: 300px;
+
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -45,6 +64,7 @@
     width: 660px;
 
     margin-left: -20px;
+    margin-bottom: 50px;
 
     flex-shrink: 0;
   }
@@ -54,24 +74,73 @@
   }
 
   .user-post__blockquote {
+    display: flex;
+
+    min-height: 155px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
     flex-grow: 1;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 24px 27px;
+
+    box-sizing: border-box;
+  }
+
+  .user-post__blockquote--panorama {
+    min-height: auto;
+
+    margin: 0 20px;
+    padding: 24px 27px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-post__comment {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  .user-post__comment--panorama {
+    order: 2;
 
     margin: 0;
   }
 
-  .user-post__blockquote--panorama {
-    margin: 0 20px;
+  .user-post__likes {
+    display: flex;
+
+    flex-grow: 1;
+    align-items: flex-end;
+  }
+
+  .user-post__likes--panorama {
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-post {
+    margin-bottom: 54px;
+  }
+
   .user-post:first-of-type {
     width: 1200px;
 
+    margin-bottom: 50px;
     margin-left: -130px;
+  }
+
+  .user-post__blockquote {
+    padding: 24px 28px;
   }
 
   .user-post__blockquote--panorama {
     margin: 0 130px;
+    padding-bottom: 23px;
   }
 }

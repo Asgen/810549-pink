@@ -1,17 +1,40 @@
 .tariff {
-  padding-top: 50px;
+  padding-top: 92px;
+  padding-bottom: 5px;
 
   background-color: $gray-color;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.tariff__wrapper {
+  width: 320px;
+
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .tariff {
-    padding: 50px 20px;
+    padding: 70px 20px;
+    padding-bottom: 35px;
+  }
+
+  .tariff__wrapper {
+    width: 620px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tariff {
     padding: 50px 130px;
+    padding-bottom: 66px;
+  }
+
+  .tariff__wrapper {
+    width: 940px;
+
+    margin-top: 73px;
   }
 }

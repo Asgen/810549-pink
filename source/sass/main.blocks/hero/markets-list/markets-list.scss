@@ -5,6 +5,24 @@
 
   list-style: none;
 
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__item:first-of-type {
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  &__item:nth-of-type(2) {
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &__item:last-of-type {
+    background-image: url("../img/logo-microsoft.svg");
+  }
+
   &__link {
     display: inline-block;
 
@@ -16,10 +34,12 @@
     font-size: 0;
 
     vertical-align: top;
+  }
+}
 
-    background-image: url("../img/logo-apple.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+@media (min-width: $tablet-width) {
+  .markets-list__item {
+    background-position: bottom;
+    background-size: unset;
   }
 }
