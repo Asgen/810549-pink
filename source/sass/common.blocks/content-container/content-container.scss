@@ -3,3 +3,21 @@
 
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .content-container {
+    width: $tablet-width;
+  }
+
+  .content-container--flex {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-container {
+    width: $desktop-width;
+
+    position: relative;
+  }
+}

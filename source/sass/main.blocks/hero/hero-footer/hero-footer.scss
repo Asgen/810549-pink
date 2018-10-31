@@ -1,9 +1,10 @@
 .hero-footer {
-  min-height: 175px;
   box-sizing: border-box;
 
   &__text {
     @include margin-killer;
+    padding: 0 35px;
+    padding-top: 5px;
 
     color: $main-color;
 
@@ -11,7 +12,41 @@
     text-align: center;
   }
 
-  &__text--with-padding {
-    padding: 0 15px;
+  &__text--form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__span {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-footer__span {
+    display: inline;
+  }
+
+  .hero-footer__text {
+    @include general-heading-normal;
+    padding: 0 110px;
+    padding-top: 42px;
+  }
+
+  .hero-footer__text--form {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-footer__text {
+    padding: 0 310px;
+    padding-top: 25px;
+  }
+
+  .hero-footer__text--form {
+    padding: 0 200px;
+    padding-top: 25px;
   }
 }

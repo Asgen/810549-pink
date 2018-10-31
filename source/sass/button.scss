@@ -1,13 +1,14 @@
 .button {
   display: inline-block;
 
-  padding: 20px 40px;
+  padding: 16px 35px;
 
   color: $white-color;
   font-weight: bold;
   font-size: $general-heading-size;
   line-height: $general-heading-size;
   text-decoration: none;
+  text-align: center;
 
   border: solid 3px $white-color;
   border-radius: 40px;
@@ -24,4 +25,11 @@
 .button:active {
   color: rgba($pink-color, 0.3);
   background-color: $white-color;
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: $button-font-size-desktop;
+    padding: 15px 30px;
+  }
 }

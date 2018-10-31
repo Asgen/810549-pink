@@ -1,11 +1,34 @@
 .hero-markets {
   &__text {
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 
     @include general-text-std;
     font-weight: 300;
 
     color: $white-color;
     text-align: center;
+  }
+
+  &__list {
+    @include margin-killer;
+    margin-bottom: 19px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-markets__list {
+    margin-bottom: 36px;
+    padding: 0 30px;
+  }
+
+  .hero-markets__text {
+    font-size: $general-heading-size;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-markets__list {
+    margin-bottom: 57px;
   }
 }

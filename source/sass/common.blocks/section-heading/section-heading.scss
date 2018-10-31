@@ -1,11 +1,37 @@
 .section-heading {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-
+  @include margin-killer;
   color: $main-color;
-  font-size: title-font-size;
-  line-height: normal;
+  font-size: $title-font-size;
+  line-height: $heading-line-height;
   font-weight: 300;
   text-align: center;
+
+  &__text {
+    @include margin-killer;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section-heading {
+    @include general-heading-tablet;
+  }
+
+  .section-heading__text {
+    padding-bottom: 0;
+  }
+
+  .section-heading__text:last-of-type {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-heading {
+    @include general-heading-desktop;
+  }
+
+  .section-heading__text:last-of-type {
+    padding: 0 250px;
+  }
 }

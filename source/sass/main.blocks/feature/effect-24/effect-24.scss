@@ -1,0 +1,137 @@
+.effect-24 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect-24 {
+    display: flex;
+
+    width: 660px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    justify-content: flex-end;
+
+    background-color: $white-color;
+  }
+
+  .effect-24__wrapper {
+    width: 100%;
+
+    background-color: $white-color;
+  }
+
+  .effect-24__timer {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    margin-right: 70px;
+
+    left: 40px;
+    top: 120px;
+
+    text-align: center;
+    vertical-align: top;
+
+    border: 15px solid $pink-color;
+    border-radius: 50%;
+
+    box-sizing: border-box;
+  }
+
+  .effect-24__time::before {
+    content: "";
+    position: absolute;
+    left: -64px;
+    top: -80px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100%;
+    opacity: 0.1;
+  }
+
+  .effect-24__time {
+    position: relative;
+
+    @include margin-killer;
+
+    color: $pink-color;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+  }
+
+  .effect-24__text-wrapper {
+    width: 296px;
+  }
+
+  .effect-24__heading {
+    @include margin-killer;
+    margin-bottom: 8px;
+
+    font-size: $feature-heading-size;
+    line-height: $feature-line-height;
+  }
+
+  .effect-24__heading-span {
+    display: block;
+  }
+
+  .effect-24__text {
+    @include margin-killer;
+    margin-bottom: 10px;
+
+    color: $main-color;
+
+    @include general-text-std;
+  }
+
+  .effect-24__link {
+    color: $pink-color;
+
+    @include general-text-std;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect-24 {
+    width: 1200px;
+
+    padding-right: 180px;
+
+    background-color: $gray-color;
+  }
+
+  .effect-24__wrapper {
+    background-color: $gray-color;
+  }
+
+  .effect-24__text-wrapper {
+    width: 525px;
+
+    padding-top: 57px;
+  }
+
+  .effect-24__text,
+  .effect-24__link {
+    @include general-heading-normal;
+  }
+
+  .effect-24__heading {
+    margin-bottom: 22px;
+  }
+
+  .effect-24__text {
+    margin-bottom: 30px;
+  }
+
+  .effect-24__heading-span {
+    display: inline;
+  }
+}

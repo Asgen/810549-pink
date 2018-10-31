@@ -1,3 +1,21 @@
 .user-posts {
   @include list-killer;
 }
+
+@media (min-width: $tablet-width) {
+  .user-posts {
+    display: flex;
+
+    padding: 0 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-posts {
+    padding: 0 130px;
+  }
+}

@@ -4,13 +4,86 @@
   padding-top: 20px;
   background-color: $main-color;
 
+  z-index: 10;
+
   &__logo {
+    width: 75px;
+    height: 22px;
     display: inline-block;
 
     padding-left: 20px;
+    padding-bottom: 25px;
+
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    cursor: pointer;
+  }
+
+  &__logo:hover {
+    background-image: url("../img/logo-pink-white-mobile-hover.svg");
+  }
+
+  &__logo:active {
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    opacity: 0.3;
   }
 
   &__logo-image {
     vertical-align: top;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 25px;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+
+    padding-bottom: 42px;
+
+    background-image: url("../img/logo-pink-white-tablet.svg");
+  }
+
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-tablet-hover.svg");
+  }
+
+  .page-header__logo:active {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    background-color: $opacity-color;
+  }
+
+  .page-header__logo {
+    position: absolute;
+
+    width: 147px;
+    height: 40px;
+
+    padding-left: 130px;
+    padding-bottom: 42px;
+
+    background-image: url("../img/logo-pink-white-desktop.svg");
+  }
+
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-desktop-hover.svg");
+  }
+
+  .page-header__logo:active {
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    opacity: 0.3;
   }
 }

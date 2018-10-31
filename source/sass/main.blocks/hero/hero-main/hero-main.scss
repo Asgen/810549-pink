@@ -1,11 +1,54 @@
 .hero-main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  background-color: $main-color;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  justify-content: flex-start;
+
+  &__heading {
+    display: none;
+
+    @include margin-killer;
+    padding: 0 40px;
+    margin-bottom: 40px;
+
+    color: white;
+    text-align: center;
+
+    @include general-heading-tablet;
+  }
 
   &__button {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-main__heading {
+    display: block;
+
+    margin-bottom: 30px;
+  }
+
+  .hero-main__button {
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-main {
+    padding-left: 130px;
+  }
+
+  .hero-main__heading {
+    @include general-heading-desktop;
+
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .hero-main__button {
+    margin-bottom: 67px;
   }
 }

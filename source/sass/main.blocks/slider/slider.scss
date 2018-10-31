@@ -1,7 +1,11 @@
 .slider {
+  position: relative;
+
   text-align: center;
 
   background-color: $white-color;
+
+  overflow: hidden;
 
   &--gray {
     background-color: $gray-color;
@@ -11,8 +15,8 @@
   &__author-name {
     display: block;
 
-    padding-top: 47px;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 15px;
 
     color: $black-color;
 
@@ -21,39 +25,16 @@
   }
 
   &__item {
+    width: 300%;
+
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
 
     border-bottom: 2px solid #e5e5e5;
   }
 
-  &__item--dark-bg {
-    color: $white-color;
-    background-color: $main-color;
-    border: 0;
-  }
-
   &__item--no-border {
     border: 0;
-  }
-
-  &__item-element {
-    display: block;
-
-    padding: 15px 22px;
-
-    @include general-text-lengthy;
-    text-transform: uppercase;
-    text-align: left;
-
-    border-left: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
-  }
-
-  &__item-element--heading {
-    font-size: $general-heading-size;
-    font-weight: bold;
-    text-align: center;
   }
 
   &__item-price {
@@ -66,16 +47,20 @@
   &__list {
     margin: 0;
     padding: 0;
-    margin-bottom: 42px;
 
     list-style: none;
 
     background-color: $white-color;
   }
 
-  &__row {
-    margin: 0 50px;
-    border: 2px solid pink;
+  &__slide {
+    float: left;
+    width: 33%;
+
+    padding: 0 20px;
+    margin-bottom: 24px;
+
+    box-sizing: border-box;
   }
 
   &__text {
@@ -93,8 +78,8 @@
 
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
-    margin-right: 20px;
+    margin-bottom: 42px;
+    margin-right: 12px;
 
     font-size: 0;
     border: 0;
@@ -112,5 +97,303 @@
   &__toggles {
     margin: 0;
     padding: 0;
+  }
+}
+/*------Таблица с тарифами------*/
+.slider__table {
+  display: table;
+  width: 300%;
+
+  table-layout: fixed;
+
+  margin-left: -530px;
+  margin-bottom: 31px;
+
+  border-collapse: collapse;
+  background-color: $white-color;
+}
+
+.slider__row {
+  display: table-row;
+  position: relative;
+}
+
+.slider__cell {
+  position: relative;
+
+  width: 276px;
+
+  display: table-cell;
+  padding: 15px 22px;
+
+  @include general-text-lengthy;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: 2px solid $dark-gray-color;
+
+  box-sizing: border-box;
+}
+
+.slider__cell--heading {
+  font-size: $general-heading-size;
+  line-height: $title-line-height;
+  font-weight: bold;
+  text-align: center;
+
+  color: $white-color;
+  background-color: $main-color;
+
+  border-top: 0;
+  border-bottom-color: $main-color;
+}
+
+.slider__heading-price {
+  font-size: $title-font-size;
+  line-height: $heading-line-height;
+  font-weight: 300;
+}
+
+.slider__cell--hidden {
+  border: 0;
+
+  background-color: $gray-color;
+}
+
+.slider__cell--mobile-view1::before {
+  content: "Розовый фильтр";
+  position: absolute;
+}
+
+.slider__cell--mobile-view2::before {
+  content: "Смайлики";
+  position: absolute;
+}
+
+.slider__cell--mobile-view3::before {
+  content: "Комментарии";
+  position: absolute;
+}
+
+.slider__cell--icon-yes::after {
+  content: "";
+  position: absolute;
+
+  width: 31px;
+  height: 21px;
+
+  right: 15px;
+  top: 20px;
+
+  background-repeat: no-repeat;
+
+  background-image: url("../img/icon-yes.svg");
+}
+
+.slider__cell--icon-no::after {
+  content: "";
+  position: absolute;
+
+  width: 27px;
+  height: 27px;
+
+  right: 18px;
+  top: 15px;
+
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-no.svg");
+}
+
+/*------Таблица с тарифами конец------*/
+
+@media (min-width: $tablet-width) {
+  .slider__slide {
+    width: 660px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin-bottom: 45px;
+  }
+
+  .slider__author-name {
+    position: relative;
+
+    padding-top: 34px;
+
+    font-size: $slider-tablet-font-size;
+  }
+
+  .slider__author-name::before {
+    content: "25 лет, водитель трамвая";
+    position: absolute;
+
+    bottom: -20px;
+    right: 0;
+    left: 0;
+
+    @include general-text-lengthy;
+    color: $main-color;
+  }
+
+  .slider__text {
+    @include general-heading-normal;
+    color: $main-color;
+  }
+
+  .slider__toggle {
+    margin-bottom: 20px;
+  }
+
+  /*------Таблица с тарифами------*/
+  .slider__table {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .slider__cell {
+    width: auto;
+
+    padding: 13px 15px;
+
+    line-height: $slider-tablet-font-size;
+
+    white-space: nowrap;
+
+    text-transform: none;
+  }
+
+  .slider__cell--heading {
+    font-size: $tablet-table-heading-size;
+    line-height: $tablet-table-heading-height;
+
+    padding-top: 15px;
+    padding-bottom: 6px;
+
+    text-transform: uppercase;
+  }
+
+  .slider__heading-price {
+    font-size: $general-heading-size;
+  }
+
+  .slider__cell--mobile-view1::before,
+  .slider__cell--mobile-view2::before,
+  .slider__cell--mobile-view3::before {
+    display: none;
+  }
+
+  .slider__cell--icon-yes::after {
+    right: 60px;
+    top: 13px;
+  }
+
+  .slider__cell--icon-no::after {
+    right: 63px;
+    top: 9px;
+  }
+  /*------------------------------*/
+  .slider__toggles--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__text::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+
+    top: 72px;
+    left: 50%;
+
+    margin-left: -40px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.1;
+  }
+
+  .slider__slide {
+    width: 1200px;
+
+    position: relative;
+  }
+
+  .slider__slide::before,
+  .slider__slide::after {
+    content: "";
+    width: 22px;
+    height: 41px;
+
+    position: absolute;
+    left: 130px;
+    bottom: 100px;
+
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    cursor: pointer;
+  }
+
+  .slider__slide::before {
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .slider__slide::after {
+    left: auto;
+    right: 130px;
+
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .slider__author-name {
+    font-size: $title-font-size;
+  }
+
+  .slider__author-name::before {
+    font-size: $general-heading-size;
+  }
+
+  .slider__text {
+    padding: 0 200px;
+    padding-top: 184px;
+  }
+
+  .slider__toggle {
+    margin-bottom: 0;
+  }
+  /*------Таблица с тарифами------*/
+  .slider__cell {
+    padding: 14px 20px;
+
+    font-size: $general-heading-size;
+    line-height: $title-line-height;
+  }
+
+  .slider__cell--heading {
+    padding-bottom: 16px;
+
+    line-height: $title-line-height;
+  }
+
+  .slider__heading-price {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+
+
+  .slider__cell--icon-yes::after {
+    right: 100px;
+    top: 23px;
+  }
+
+  .slider__cell--icon-no::after {
+    right: 103px;
+    top: 17px;
   }
 }
