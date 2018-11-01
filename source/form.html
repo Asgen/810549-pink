@@ -4,13 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Конкурс от приложения "Pink"</title>
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "preview/pink-form-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "preview/pink-form-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1200px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "preview/pink-form-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="content-container">
 
-      <header class="page-header">
+    <header class="page-header">
+      <div class="content-container">
         <a href="index.html" class="page-header__logo" aria-label="Логотип Pink">
         </a>
         <nav class="main-nav">
@@ -30,8 +56,8 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <main class="page-main">
 

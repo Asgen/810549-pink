@@ -5,7 +5,7 @@
     margin: 0 20px;
     padding: 25px 17px;
     padding-top: 18px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
 
     @include general-text-std;
 
@@ -28,23 +28,72 @@
 
   &__link {
     display: block;
+    position: relative;
 
     text-align: center;
   }
 
+
+  &__link--panorama::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+
+    width: 140px;
+    height: 30px;
+
+    padding-top: 5px;
+
+    color: $white-color;
+    font-size: $user-post-time-font-size;
+    line-height: $text-line-height;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: $pink-color;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+  }
+
   &__time {
     font-size: $user-post-time-font-size;
+    font-weight: 300;
 
     text-transform: uppercase;
   }
 
   &__comment {
     margin: 0;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   &__likes {
+    position: relative;
+
     @include margin-killer;
+    padding-left: 33px;
+
+    color: $pink-color;
+    font-size: $user-post-time-font-size;
+    line-height: $text-line-height;
+
+    text-transform: uppercase;
+  }
+
+  &__likes::before {
+    content: "";
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 5px;
+
   }
 }
 
@@ -71,6 +120,11 @@
 
   .user-post__image {
     padding: 0;
+  }
+
+  .user-post__link--panorama::before {
+    top: 57px;
+    right: 20px;
   }
 
   .user-post__blockquote {
@@ -114,12 +168,23 @@
   .user-post__likes {
     display: flex;
 
+    padding: 0;
+    padding-right: 32px;
+
     flex-grow: 1;
     align-items: flex-end;
   }
 
+  .user-post__likes::before {
+    left: unset;
+    top: unset;
+    right: 5px;
+    bottom: 5px;
+  }
+
   .user-post__likes--panorama {
     justify-content: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -133,6 +198,11 @@
 
     margin-bottom: 50px;
     margin-left: -130px;
+  }
+
+  .user-post__link--panorama::before {
+    top: 54px;
+    right: 130px;
   }
 
   .user-post__blockquote {

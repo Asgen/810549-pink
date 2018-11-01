@@ -10,7 +10,7 @@
     height: 24px;
 
     @include margin-killer;
-    top: 20px;
+    top: 0;
     right: 20px;
 
     font-size: 0;
@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 44px;
+    top: 20px;
   }
 }
 

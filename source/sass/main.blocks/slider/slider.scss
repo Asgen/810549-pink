@@ -163,16 +163,22 @@
 .slider__cell--mobile-view1::before {
   content: "Розовый фильтр";
   position: absolute;
+
+  top: 16px;
 }
 
 .slider__cell--mobile-view2::before {
   content: "Смайлики";
   position: absolute;
+
+  top: 16px;
 }
 
 .slider__cell--mobile-view3::before {
   content: "Комментарии";
   position: absolute;
+
+  top: 14px;
 }
 
 .slider__cell--icon-yes::after {
@@ -256,6 +262,7 @@
     width: auto;
 
     padding: 13px 15px;
+    padding-bottom: 12px;
 
     line-height: $slider-tablet-font-size;
 

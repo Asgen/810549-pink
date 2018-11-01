@@ -22,6 +22,15 @@
   &__button {
     margin-bottom: 35px;
   }
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__button {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,13 +40,25 @@
     margin-bottom: 30px;
   }
 
+  .hero-main__wrapper {
+    width: 320px;
+
+    padding: 0 10px;
+
+    text-align: center;
+  }
+
   .hero-main__button {
     margin-bottom: 46px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .hero-main {
+  .hero-main__wrapper {
+    width: 308px;
+
     padding-left: 130px;
   }
 
@@ -50,5 +71,9 @@
 
   .hero-main__button {
     margin-bottom: 67px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: $hero-button-font-size-desktop;
   }
 }

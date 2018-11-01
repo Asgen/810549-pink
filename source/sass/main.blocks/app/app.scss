@@ -1,4 +1,6 @@
 .app {
+  position: relative;
+
   &__heading {
     max-width: 300px;
 
@@ -17,24 +19,28 @@
     margin: 0 auto;
   }
 
+  &__filters {
+    padding: 0 20px;
+  }
+
   &__list {
     display: flex;
     position: relative;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
     @include list-killer;
     margin-bottom: 113px;
+    padding: 0 14px;
     padding-top: 42px;
   }
 
   &__label {
-    display: block;
+    display: flex;
+    align-items: center;
 
     width: 48px;
     height: 43px;
-
-    background-color: purple;
   }
 
   &__input {
@@ -52,15 +58,62 @@
 
   &__button {
     margin-bottom: 12px;
-    background-color: magenta;
+
+    color: $pink-color;
+
+    border-color: $pink-color;
+  }
+
+  &__button:hover {
+    color: $white-color;
+
+    background-color: $pink-color;
+  }
+
+  &__button:active,
+  &__button:last-of-type:active {
+    color: $white-transparent;
   }
 
   &__button:last-of-type {
     margin-bottom: 0;
+
+    color: $main-color;
+
+    border-color: $main-color;
+
+    opacity: 0.1;
+  }
+
+  &__button:last-of-type:hover {
+    opacity: 0.3;
+    background-color: transparent;
+  }
+
+  &__button:last-of-type:active {
+    color: $white-transparent;
+    background-color: $main-color;
+    opacity: 0.3;
   }
 }
 
+.app::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+
+  height: 1px;
+  bottom: 200px;
+
+  background-color: $opacity-color-1;
+}
+
 @media (min-width: $tablet-width) {
+  .app::before {
+    display: none;
+  }
+
   .app__heading {
     max-width: 421px;
 
@@ -83,9 +136,26 @@
   .app__filter {
     display: flex;
 
-    padding: 22px 0;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    margin-bottom: 15px;
 
     border-bottom: 1px solid $opacity-color-1;
+  }
+
+  .app__object {
+    width: 22px;
+    height: 22px;
+  }
+
+   .app__object--fill {
+    width: 24px;
+    height: 24px;
+  }
+
+   .app__object--contrast {
+    width: 16px;
+    height: 16px;
   }
 
   .app__label {
@@ -109,7 +179,8 @@
   }
 
   .app__button {
-    margin-bottom: 25px;
+    margin: 0 30px;
+    margin-bottom: 21px;
   }
 }
 
@@ -123,9 +194,41 @@
     padding-left: 210px;
   }
 
+  .app__list {
+    padding: 0;
+  }
+
+  .app__filters {
+    padding: 0;
+  }
+
+    .app__object {
+    width: 42px;
+    height: 42px;
+  }
+
+   .app__object--fill {
+    width: 48px;
+    height: 48px;
+  }
+
+   .app__object--contrast {
+    width: 41px;
+    height: 32px;
+  }
+
+  .app__label {
+    margin-right: 68px;
+  }
+
+  .app__input {
+    width: 288px;
+  }
+
   .app__button,
   .app__button:last-of-type {
-    margin-bottom: 5px;
+    width: 183px;
+    margin: 0;
 
     align-self: flex-end;
   }

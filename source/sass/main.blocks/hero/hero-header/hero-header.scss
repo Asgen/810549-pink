@@ -1,13 +1,12 @@
 .hero-header {
   min-height: 170px;
-  width: 320px;
-  margin: 0 auto;
 
   box-sizing: border-box;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -23,7 +22,10 @@
   }
 
   &__title {
+    max-width: 300px;
+
     @include margin-killer;
+    margin: 0 auto;
 
     color: $white-color;
     font-size: $title-font-size;

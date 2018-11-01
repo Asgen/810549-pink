@@ -4,15 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Приложение "Pink"</title>
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "preview/pink-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "preview/pink-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1200px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "preview/pink-index-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="content-container">
 
-      <header class="page-header">
-        <a class="page-header__logo" aria-label="Логотип Pink">
-        </a>
+    <header class="page-header">
+      <div class="content-container">
+      <a class="page-header__logo" aria-label="Логотип Pink">
+      </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
@@ -30,8 +56,9 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
+
 
       <main class="page-main">
 
@@ -46,27 +73,32 @@
               </picture>
             </div>
           </div>
-          <div class="content-container">
-            <div class="hero__main hero-main">
-              <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
-              <a class="hero-main__button button" href="#">Скачать приложение</a>
-              <div class="hero-main__markets hero-markets">
-                <ul class="markets-list hero-markets__list">
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
-                  </li>
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
-                  </li>
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
-                  </li>
-                </ul>
-                <div class="hero-markets__text">
-                  Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
+
+          <div class="hero__main hero-main">
+            <div class="content-container">
+              <div class="hero-main__wrapper">
+                <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
+                <a class="hero-main__button button" href="#">Скачать приложение</a>
+                <div class="hero-main__markets hero-markets">
+                  <ul class="markets-list hero-markets__list">
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
+                    </li>
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
+                    </li>
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
+                    </li>
+                  </ul>
+                  <div class="hero-markets__text">
+                    Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="content-container">
             <div class="hero__footer section-heading">
               <p class="section-heading__text">Устали от серости мегаполиса?</p>
               <p class="section-heading__text">Нам есть, что вам предложить!</p>
@@ -142,38 +174,38 @@
         <section class="tariff">
           <h2 class="visually-hidden">Наши тарифы</h2>
           <div class="tariff__wrapper slider slider--gray">
-            <div class="slider__table">
-              <div class="slider__row">
-                <div class="slider__cell slider__cell--hidden"></div>
-                <div class="slider__cell slider__cell--heading">База<br>
+            <table class="slider__table">
+              <tr class="slider__row">
+                <td class="slider__cell slider__cell--hidden"></td>
+                <td class="slider__cell slider__cell--heading">База<br>
                   <span class="slider__heading-price">1,99 usd</span>
-                </div>
-                <div class="slider__cell slider__cell--heading">Стандарт<br>
+                </td>
+                <td class="slider__cell slider__cell--heading">Стандарт<br>
                   <span class="slider__heading-price">3,99 usd</span>
-                </div>
-                <div class="slider__cell slider__cell--heading">Анлим<br>
+                </td>
+                <td class="slider__cell slider__cell--heading">Анлим<br>
                   <span class="slider__heading-price">9,99 usd</span>
-                </div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Розовый фильтр</div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view1"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Смайлики</div>
-                <div class="slider__cell slider__cell--icon-no"></div>
-                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view2"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Комментарии</div>
-                <div class="slider__cell slider__cell--icon-no"></div>
-                <div class="slider__cell slider__cell--icon-no slider__cell--mobile-view3"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-            </div>
+                </td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Розовый фильтр</td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+                <td class="slider__cell slider__cell--icon-yes slider__cell--mobile-view1"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Смайлики</td>
+                <td class="slider__cell slider__cell--icon-no"></td>
+                <td class="slider__cell slider__cell--icon-yes slider__cell--mobile-view2"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Комментарии</td>
+                <td class="slider__cell slider__cell--icon-no"></td>
+                <td class="slider__cell slider__cell--icon-no slider__cell--mobile-view3"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+            </table>
             <p class="slider__toggles slider__toggles--hidden">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--current" type="button">2</button>
