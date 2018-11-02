@@ -29,6 +29,10 @@
     margin-bottom: -42px;
   }
 
+  &__image--only-desktop {
+    display: none;
+  }
+
   &__item {
     margin-bottom: 27px;
   }
@@ -134,6 +138,15 @@
     height: 302px;
 
     margin-top: 0;
+    margin-right: 32px;
+  }
+
+   .feature__image--only-desktop {
+    display: block;
+  }
+
+  .feature__image--no-padding {
+    margin-right: 0;
   }
 
   .feature__heading {

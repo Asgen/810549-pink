@@ -7,6 +7,16 @@
     text-decoration: none;
   }
 
+  &__link:hover {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &__link:active {
+    color: $opacity-color;
+    text-decoration: none;
+  }
+
   &__list {
     @include list-killer;
 

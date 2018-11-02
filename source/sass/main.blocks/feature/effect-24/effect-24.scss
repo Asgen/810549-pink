@@ -21,6 +21,8 @@
   .effect-24__wrapper {
     width: 100%;
 
+    padding-bottom: 30px;
+
     background-color: $white-color;
   }
 
@@ -93,9 +95,18 @@
   }
 
   .effect-24__link {
-    color: $pink-color;
-
     @include general-text-std;
+    color: $pink-color;
+  }
+
+  .effect-24__link:hover {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  .effect-24__link:active {
+    color: $opacity-color;
+    text-decoration: none;
   }
 }
 
@@ -109,7 +120,30 @@
   }
 
   .effect-24__wrapper {
+    padding-bottom: 53px;
+
     background-color: $gray-color;
+  }
+
+  .effect-24__timer {
+    width: 253px;
+    height: 253px;
+
+    left: 152px;
+    top: 96px;
+  }
+
+  .effect-24__time {
+    font-size: 120px;
+    line-height: 209px;
+  }
+
+  .effect-24__time::before {
+    width: 298px;
+    height: 345px;
+
+    left: -78px;
+    top: -107px;
   }
 
   .effect-24__text-wrapper {

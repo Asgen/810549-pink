@@ -78,7 +78,7 @@
             <div class="content-container">
               <div class="hero-main__wrapper">
                 <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
-                <a class="hero-main__button button" href="#">Скачать приложение</a>
+                <a class="hero-main__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
                 <div class="hero-main__markets hero-markets">
                   <ul class="markets-list hero-markets__list">
                     <li class="markets-list__item">
@@ -115,7 +115,7 @@
               </li>
               <li class="feature__item">
                 <h3 class="feature__heading">Меняет мир вокруг</h3>
-                <p class="feature__paragraph">Сделайте снимок и украсте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="feature__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="feature__item">
                 <h3 class="feature__heading">Заводит новых друзей</h3>
@@ -123,9 +123,17 @@
               </li>
             </ul>
             <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <img class="feature__image feature__image--only-desktop" src="img/iphone-screen-1-tablet@1x.png" alt="Приложение Pink со смайликом">
+            </picture>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <img class="feature__image feature__image--only-desktop" src="img/iphone-screen-2-tablet@2x.png" alt="Приложение Pink со смайликом">
+            </picture>
+            <picture>
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="feature__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Pink со смайликом">
+                <img class="feature__image feature__image--no-padding" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Pink со смайликом">
             </picture>
           </div>
           <div class="effect-24__wrapper">
@@ -167,6 +175,8 @@
                 <button class="slider__toggle" type="button">2</button>
                 <button class="slider__toggle" type="button">3</button>
               </p>
+              <div class="slider__arrow-left"></div>
+              <div class="slider__arrow-right"></div>
             </div>
           </section>
         </div>
@@ -242,7 +252,9 @@
 
         <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <div class="map__container"></div>
+          <div class="map__container">
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b0b429bbcad0e70fceb4b3654912828bd798d3e0c9d94d6b2344460c368e478&amp;source=constructor" width="320" height="300"></iframe>
+          </div>
         </section>
       </main>
 
@@ -256,10 +268,10 @@
                 <a class="main-footer__social-link" href="#vk" aria-label="Мы Вконтакте"></a>
               </li>
               <li class="main-footer__social-item">
-                <a class="main-footer__social-link href="#fb" aria-label="Мы в Фэйсбук"></a>
+                <a class="main-footer__social-link" href="#fb" aria-label="Мы в Фэйсбук"></a>
               </li>
               <li class="main-footer__social-item">
-                <a class="main-footer__social-link href="#tweet" aria-label="Мы в Твиттере"></a>
+                <a class="main-footer__social-link" href="#tweet" aria-label="Мы в Твиттере"></a>
               </li>
             </ul>
           </div>
