@@ -19,10 +19,6 @@
     @include general-heading-tablet;
   }
 
-  &__button {
-    margin-bottom: 35px;
-  }
-
   &__wrapper {
     padding: 0 20px;
   }
@@ -30,6 +26,7 @@
   &__button {
     padding-left: 35px;
     padding-right: 35px;
+    margin-bottom: 35px;
   }
 }
 

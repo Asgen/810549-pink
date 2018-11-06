@@ -110,8 +110,8 @@
     padding: 0;
   }
 
-   &__arrow-left,
-   &__arrow-right {
+  &__arrow-left,
+  &__arrow-right {
     display: none;
   }
 }
@@ -355,7 +355,7 @@
     bottom: 207px;
   }
 
-   .slider__arrow-right {
+  .slider__arrow-right {
     display: block;
     position: absolute;
 
@@ -394,8 +394,6 @@
   .slider__arrow-left:active::before {
     opacity: 0.1;
   }
-
-
 
   .slider__author-name {
     font-size: $title-font-size;

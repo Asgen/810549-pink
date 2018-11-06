@@ -21,6 +21,14 @@
 
     cursor: pointer;
   }
+
+  &__toggle:hover {
+    background-image: url("../img/icon-menu-burger-pink.svg");
+  }
+
+  &__toggle:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

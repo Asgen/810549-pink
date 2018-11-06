@@ -101,7 +101,10 @@
 
   padding-right: 42px;
 
+  color: $main-color;
   font-size: $general-text-size;
+
+  text-decoration: none;
 }
 
 .main-footer__copyright::before {
@@ -168,7 +171,7 @@
   }
 
   .main-footer--form {
-    padding-top: 72px;
+    padding-top: 73px;
   }
 
   .main-footer__logo {

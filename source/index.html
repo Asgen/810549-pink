@@ -4,32 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Приложение "Pink"</title>
-    <!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "preview/pink-index-mobile.jpg" );
-  }
-  /* Планшет */
-  @media ( min-width: 660px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "preview/pink-index-tablet.jpg" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 1200px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "preview/pink-index-desktop.jpg" );
-    }
-  }
-</style>
-<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<script src="../node_modules/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -43,7 +17,7 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
+              <a class="site-list__link site-list__link--active">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html" class="site-list__link">Фотографии</a>
