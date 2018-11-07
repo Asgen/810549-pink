@@ -10,7 +10,7 @@
     height: 24px;
 
     @include margin-killer;
-    top: 20px;
+    top: 0;
     right: 20px;
 
     font-size: 0;
@@ -21,11 +21,19 @@
 
     cursor: pointer;
   }
+
+  &__toggle:hover {
+    background-image: url("../img/icon-menu-burger-pink.svg");
+  }
+
+  &__toggle:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 44px;
+    top: 20px;
   }
 }
 

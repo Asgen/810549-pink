@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="content-container">
 
-      <header class="page-header">
-        <a class="page-header__logo" aria-label="Логотип Pink">
-        </a>
+    <header class="page-header">
+      <div class="content-container">
+      <a class="page-header__logo" aria-label="Логотип Pink">
+      </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
+              <a class="site-list__link site-list__link--active">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html" class="site-list__link">Фотографии</a>
@@ -30,8 +30,9 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
+
 
       <main class="page-main">
 
@@ -46,27 +47,32 @@
               </picture>
             </div>
           </div>
-          <div class="content-container">
-            <div class="hero__main hero-main">
-              <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
-              <a class="hero-main__button button" href="#">Скачать приложение</a>
-              <div class="hero-main__markets hero-markets">
-                <ul class="markets-list hero-markets__list">
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
-                  </li>
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
-                  </li>
-                  <li class="markets-list__item">
-                    <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
-                  </li>
-                </ul>
-                <div class="hero-markets__text">
-                  Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
+
+          <div class="hero__main hero-main">
+            <div class="content-container">
+              <div class="hero-main__wrapper">
+                <p class="hero-main__heading">Взгляните на жизнь иначе!</p>
+                <a class="hero-main__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+                <div class="hero-main__markets hero-markets">
+                  <ul class="markets-list hero-markets__list">
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://www.apple.com/ru/itunes/">iTunes</a>
+                    </li>
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://play.google.com/store">Play Market</a>
+                    </li>
+                    <li class="markets-list__item">
+                      <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Microsoft Store</a>
+                    </li>
+                  </ul>
+                  <div class="hero-markets__text">
+                    Доступно для iPhone,iPad, Android, Windows Phone, OS X, Windowns 8
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="content-container">
             <div class="hero__footer section-heading">
               <p class="section-heading__text">Устали от серости мегаполиса?</p>
               <p class="section-heading__text">Нам есть, что вам предложить!</p>
@@ -83,7 +89,7 @@
               </li>
               <li class="feature__item">
                 <h3 class="feature__heading">Меняет мир вокруг</h3>
-                <p class="feature__paragraph">Сделайте снимок и украсте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="feature__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="feature__item">
                 <h3 class="feature__heading">Заводит новых друзей</h3>
@@ -91,13 +97,21 @@
               </li>
             </ul>
             <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <img class="feature__image feature__image--only-desktop" src="img/iphone-screen-1-tablet@1x.png" alt="Приложение Pink со смайликом">
+            </picture>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <img class="feature__image feature__image--only-desktop" src="img/iphone-screen-2-tablet@2x.png" alt="Приложение Pink со смайликом">
+            </picture>
+            <picture>
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="feature__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Pink со смайликом">
+                <img class="feature__image feature__image--no-padding" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Pink со смайликом">
             </picture>
           </div>
-          <div class="effect-24__wrapper">
-            <div class="feature__24 effect-24">
+          <div class="effect-24">
+            <div class="feature__24 effect-24__wrapper">
               <div class="effect-24__timer">
                 <span class="effect-24__time">24</span>
               </div>
@@ -135,6 +149,8 @@
                 <button class="slider__toggle" type="button">2</button>
                 <button class="slider__toggle" type="button">3</button>
               </p>
+              <div class="slider__arrow-left"></div>
+              <div class="slider__arrow-right"></div>
             </div>
           </section>
         </div>
@@ -142,38 +158,38 @@
         <section class="tariff">
           <h2 class="visually-hidden">Наши тарифы</h2>
           <div class="tariff__wrapper slider slider--gray">
-            <div class="slider__table">
-              <div class="slider__row">
-                <div class="slider__cell slider__cell--hidden"></div>
-                <div class="slider__cell slider__cell--heading">База<br>
+            <table class="slider__table">
+              <tr class="slider__row">
+                <td class="slider__cell slider__cell--hidden"></td>
+                <td class="slider__cell slider__cell--heading">База<br>
                   <span class="slider__heading-price">1,99 usd</span>
-                </div>
-                <div class="slider__cell slider__cell--heading">Стандарт<br>
+                </td>
+                <td class="slider__cell slider__cell--heading">Стандарт<br>
                   <span class="slider__heading-price">3,99 usd</span>
-                </div>
-                <div class="slider__cell slider__cell--heading">Анлим<br>
+                </td>
+                <td class="slider__cell slider__cell--heading">Анлим<br>
                   <span class="slider__heading-price">9,99 usd</span>
-                </div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Розовый фильтр</div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view1"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Смайлики</div>
-                <div class="slider__cell slider__cell--icon-no"></div>
-                <div class="slider__cell slider__cell--icon-yes slider__cell--mobile-view2"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-              <div class="slider__row">
-                <div class="slider__cell">Комментарии</div>
-                <div class="slider__cell slider__cell--icon-no"></div>
-                <div class="slider__cell slider__cell--icon-no slider__cell--mobile-view3"></div>
-                <div class="slider__cell slider__cell--icon-yes"></div>
-              </div>
-            </div>
+                </td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Розовый фильтр</td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+                <td class="slider__cell slider__cell--icon-yes slider__cell--mobile-view1"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Смайлики</td>
+                <td class="slider__cell slider__cell--icon-no"></td>
+                <td class="slider__cell slider__cell--icon-yes slider__cell--mobile-view2"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+              <tr class="slider__row">
+                <td class="slider__cell">Комментарии</td>
+                <td class="slider__cell slider__cell--icon-no"></td>
+                <td class="slider__cell slider__cell--icon-no slider__cell--mobile-view3"></td>
+                <td class="slider__cell slider__cell--icon-yes"></td>
+              </tr>
+            </table>
             <p class="slider__toggles slider__toggles--hidden">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--current" type="button">2</button>
@@ -210,7 +226,9 @@
 
         <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <div class="map__container"></div>
+          <div class="map__container">
+            <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1b0b429bbcad0e70fceb4b3654912828bd798d3e0c9d94d6b2344460c368e478&amp;source=constructor" width="320" height="300"></iframe>
+          </div>
         </section>
       </main>
 
@@ -224,10 +242,10 @@
                 <a class="main-footer__social-link" href="#vk" aria-label="Мы Вконтакте"></a>
               </li>
               <li class="main-footer__social-item">
-                <a class="main-footer__social-link href="#fb" aria-label="Мы в Фэйсбук"></a>
+                <a class="main-footer__social-link" href="#fb" aria-label="Мы в Фэйсбук"></a>
               </li>
               <li class="main-footer__social-item">
-                <a class="main-footer__social-link href="#tweet" aria-label="Мы в Твиттере"></a>
+                <a class="main-footer__social-link" href="#tweet" aria-label="Мы в Твиттере"></a>
               </li>
             </ul>
           </div>

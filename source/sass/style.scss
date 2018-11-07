@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import "variables.scss";
+@import "input-range-sass";
 @import "button.scss";
 @import "header.blocks/page-header/page-header.scss";
 @import "header.blocks/main-nav/main-nav.scss";
@@ -25,8 +26,11 @@
 @import "main.blocks/app/post-maker/post-maker.scss";
 @import "main.blocks/form/form.scss";
 @import "common.blocks/main-footer/main-footer.scss";
+@import "common.blocks/modal/modal.scss";
 
 body {
+  position: relative;
+
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -39,4 +43,14 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden-on-mobile {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .hidden-on-mobile {
+    display: inline;
+  }
 }

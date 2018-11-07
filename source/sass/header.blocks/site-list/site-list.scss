@@ -27,6 +27,10 @@
   &__link:hover {
     color: $pink-color;
   }
+
+  &__link:active {
+    color: $pink-transparent;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -55,7 +59,24 @@
 
   .site-list__link {
     padding: 15px 0;
+    padding-bottom: 10px;
 
     text-transform: none;
+  }
+
+  .site-list__link:active {
+    color: $white-transparent;
+  }
+
+  .site-list__link--active {
+    border-bottom: 2px solid $white-color;
+  }
+
+  .site-list__link--active:hover {
+    color: $white-color;
+  }
+
+  .site-list__link--active:active {
+    color: $white-color;
   }
 }

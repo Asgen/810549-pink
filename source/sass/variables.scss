@@ -1,12 +1,18 @@
 $main-color: #283645;
-$opacity-color: rgba(0, 0, 0, 0.3);
+$opacity-color: rgba(40, 54, 69, 0.3);
+$slider-bellet-on-hover: rgba(40, 54, 69, 0.6);
+$slider-bellet-active: rgba(40, 54, 69, 0.1);
 $opacity-color-1: rgba(0, 0, 0, 0.1);
 $pink-color: #d22856;
+$pink-transparent: rgba(210, 40, 86, 0.3);
 $gray-color: #f2f2f2;
 $dark-gray-color: #e5e5e5;
 $white-color: #ffffff;
+$white-transparent: rgba(255, 255, 255, 0.3);
 $black-color: #000000;
+$black-color-opacity: rgba(0, 0, 0, 0.3);
 $green-color: #2aab6d;
+$green-color-hover: #1c9b5e;
 
 $tablet-width: 660px;
 $desktop-width: 1200px;
@@ -32,7 +38,7 @@ $user-post-time-font-size: 12px;
 $general-text-size: 14px;
 $text-line-height: 24px;
 $small-line-height: 18px;
-$button-font-size-desktop: 21px;
+$hero-button-font-size-desktop: 21px;
 
 @mixin general-heading-bold {
   font-size: $general-heading-size;

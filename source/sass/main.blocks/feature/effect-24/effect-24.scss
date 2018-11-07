@@ -1,9 +1,9 @@
-.effect-24 {
+.effect-24__wrapper {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .effect-24 {
+  .effect-24__wrapper {
     display: flex;
 
     width: 660px;
@@ -18,8 +18,10 @@
     background-color: $white-color;
   }
 
-  .effect-24__wrapper {
+  .effect-24 {
     width: 100%;
+
+    padding-bottom: 30px;
 
     background-color: $white-color;
   }
@@ -93,14 +95,23 @@
   }
 
   .effect-24__link {
-    color: $pink-color;
-
     @include general-text-std;
+    color: $pink-color;
+  }
+
+  .effect-24__link:hover {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  .effect-24__link:active {
+    color: $opacity-color;
+    text-decoration: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .effect-24 {
+  .effect-24__wrapper {
     width: 1200px;
 
     padding-right: 180px;
@@ -108,8 +119,31 @@
     background-color: $gray-color;
   }
 
-  .effect-24__wrapper {
+  .effect-24 {
+    padding-bottom: 53px;
+
     background-color: $gray-color;
+  }
+
+  .effect-24__timer {
+    width: 253px;
+    height: 253px;
+
+    left: 152px;
+    top: 96px;
+  }
+
+  .effect-24__time {
+    font-size: 120px;
+    line-height: 209px;
+  }
+
+  .effect-24__time::before {
+    width: 298px;
+    height: 345px;
+
+    left: -78px;
+    top: -107px;
   }
 
   .effect-24__text-wrapper {

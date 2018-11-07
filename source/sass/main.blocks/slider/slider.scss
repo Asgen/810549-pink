@@ -85,10 +85,21 @@
     border: 0;
     border-radius: 10px;
 
+    background-color: $opacity-color;
+
     cursor: pointer;
   }
 
-  &__toggle--current {
+  &__toggle:hover {
+    background-color: $slider-bellet-on-hover;
+  }
+
+  &__toggle:active {
+    background-color: $slider-bellet-active;
+  }
+
+  &__toggle--current,
+  &__toggle--current:hover {
     background-color: $white-color;
     border: 3px solid $main-color;
     box-sizing: content-box;
@@ -97,6 +108,11 @@
   &__toggles {
     margin: 0;
     padding: 0;
+  }
+
+  &__arrow-left,
+  &__arrow-right {
+    display: none;
   }
 }
 /*------Таблица с тарифами------*/
@@ -163,16 +179,22 @@
 .slider__cell--mobile-view1::before {
   content: "Розовый фильтр";
   position: absolute;
+
+  top: 16px;
 }
 
 .slider__cell--mobile-view2::before {
   content: "Смайлики";
   position: absolute;
+
+  top: 16px;
 }
 
 .slider__cell--mobile-view3::before {
   content: "Комментарии";
   position: absolute;
+
+  top: 14px;
 }
 
 .slider__cell--icon-yes::after {
@@ -256,6 +278,7 @@
     width: auto;
 
     padding: 13px 15px;
+    padding-bottom: 12px;
 
     line-height: $slider-tablet-font-size;
 
@@ -324,15 +347,29 @@
     position: relative;
   }
 
-  .slider__slide::before,
-  .slider__slide::after {
+  .slider__arrow-left {
+    display: block;
+    position: absolute;
+
+    left: 130px;
+    bottom: 207px;
+  }
+
+  .slider__arrow-right {
+    display: block;
+    position: absolute;
+
+    left: 1048px;
+    bottom: 207px;
+  }
+
+  .slider__arrow-right::before,
+  .slider__arrow-left::before {
     content: "";
     width: 22px;
     height: 41px;
 
     position: absolute;
-    left: 130px;
-    bottom: 100px;
 
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -340,15 +377,22 @@
     cursor: pointer;
   }
 
-  .slider__slide::before {
+  .slider__arrow-left::before {
     background-image: url("../img/icon-review-arrow-left.svg");
   }
 
-  .slider__slide::after {
-    left: auto;
-    right: 130px;
-
+  .slider__arrow-right::before {
     background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .slider__arrow-right:hover::before,
+  .slider__arrow-left:hover::before {
+    opacity: 0.6;
+  }
+
+  .slider__arrow-right:active::before,
+  .slider__arrow-left:active::before {
+    opacity: 0.1;
   }
 
   .slider__author-name {

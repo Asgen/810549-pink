@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="content-container">
 
-      <header class="page-header">
+    <header class="page-header">
+      <div class="content-container">
         <a href="index.html" class="page-header__logo" aria-label="Логотип Pink">
         </a>
         <nav class="main-nav">
@@ -20,7 +20,7 @@
               <a href="index.html" class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Фотографии</a>
+              <a class="site-list__link site-list__link--active">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a href="form.html" class="site-list__link">Конкурс</a>
@@ -30,8 +30,8 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <main class="page-main">
 
@@ -51,7 +51,7 @@
           <h2 class="visually-hidden">Недавние посты</h2>
           <ul class="posts__list user-posts">
             <li class="posts__item user-post">
-              <a class="user-post__link" href="#">
+              <a class="user-post__link user-post__link--panorama" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
@@ -63,7 +63,7 @@
                   <span class="user-post__time">(5 минут назад)</span>
                 </cite>
                 <p class="user-post__comment user-post__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <p class="user-post__likes user-post__likes--panorama">Нравится:</p>
+                <p class="user-post__likes user-post__likes--panorama">Нравится: 215</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -79,7 +79,7 @@
                   <span class="user-post__time">(5 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 356</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -95,7 +95,7 @@
                   <span class="user-post__time">(12 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Соседи будут рады!</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 666</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -111,7 +111,7 @@
                   <span class="user-post__time">(20 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 215</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -127,7 +127,7 @@
                   <span class="user-post__time">(25 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Самая кубанская в мире!</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 4</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -143,7 +143,7 @@
                   <span class="user-post__time">(40 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Где снег-то?</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 150</p>
               </blockquote>
             </li>
             <li class="posts__item user-post">
@@ -159,7 +159,7 @@
                   <span class="user-post__time">(45 часов назад)</span>
                 </cite>
                 <p class="user-post__comment">Всем GM и взаимные лайки!</p>
-                <p class="user-post__likes">Нравится:</p>
+                <p class="user-post__likes">Нравится: 2560</p>
               </blockquote>
             </li>
           </ul>
@@ -179,15 +179,30 @@
               <div class="app__filters post-filters">
                 <ul class="app__list">
                   <li class="app__filter">
-                    <label class="app__label active-filter" for="range-cut"><span class="visually-hidden">Обрезка</span></label>
-                    <input class="app__input app__input--active " type="range" id="range-cut">
+                    <label class="app__label" for="range-cut">
+                      <object class="app__object " type="image/svg+xml" data="img/icon-editor-crop.svg" width="44" height="44">
+                        <img src="icon-editor-crop.svg" width="44" height="44" alt="Иконка обрезки фото"/>
+                      </object>
+                      <span class="visually-hidden">Обрезка</span>
+                    </label>
+                    <input class="app__input app__input--active " type="range" id="range-cut" min="0" max="20" step="17">
                   </li>
                   <li class="app__filter">
-                    <label class="app__label" for="range-fill"><span class="visually-hidden">Заливка</span></label>
+                    <label class="app__label" for="range-fill">
+                      <object class="app__object app__object--fill" type="image/svg+xml" data="img/icon-editor-fill.svg" width="48" height="44">
+                        <img src="icon-editor-fill.svg" width="44" height="44" alt="Иконка обрезки фото"/>
+                      </object>
+                      <span class="visually-hidden">Заливка</span>
+                    </label>
                     <input class="app__input" type="range" id="range-fill">
                   </li>
                   <li class="app__filter">
-                    <label class="app__label" for="range-contrast"><span class="visually-hidden">Контрастность</span></label>
+                    <label class="app__label" for="range-contrast">
+                      <object class="app__object app__object--contrast" type="image/svg+xml" data="img/icon-editor-contrast.svg" width="32" height="32">
+                        <img src="icon-editor-contrast.svg" width="32" height="32" alt="Иконка обрезки фото"/>
+                      </object>
+                      <span class="visually-hidden">Контрастность</span>
+                    </label>
                     <input class="app__input" type="range" id="range-contrast">
                   </li>
                 </ul>
