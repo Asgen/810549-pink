@@ -1,9 +1,9 @@
-.effect-24 {
+.effect-24__wrapper {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .effect-24 {
+  .effect-24__wrapper {
     display: flex;
 
     width: 660px;
@@ -18,7 +18,7 @@
     background-color: $white-color;
   }
 
-  .effect-24__wrapper {
+  .effect-24 {
     width: 100%;
 
     padding-bottom: 30px;
@@ -111,7 +111,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .effect-24 {
+  .effect-24__wrapper {
     width: 1200px;
 
     padding-right: 180px;
@@ -119,7 +119,7 @@
     background-color: $gray-color;
   }
 
-  .effect-24__wrapper {
+  .effect-24 {
     padding-bottom: 53px;
 
     background-color: $gray-color;
