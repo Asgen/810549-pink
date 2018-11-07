@@ -52,6 +52,8 @@
     position: absolute;
     width: 100%;
 
+    padding: 0;
+
     bottom: -50px;
     left: 0;
   }
@@ -168,6 +170,8 @@
   .app__input {
     display: block;
     width: 202px;
+
+    padding: 0;
   }
 
   .app__input--active {
@@ -218,7 +222,9 @@
   }
 
   .app__label {
-    margin-right: 68px;
+    width: 48px;
+
+    margin-right: 44px;
   }
 
   .app__input {
