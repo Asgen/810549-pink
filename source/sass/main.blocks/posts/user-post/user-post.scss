@@ -31,6 +31,7 @@
     position: relative;
 
     text-align: center;
+    text-decoration: none;
   }
 
 
@@ -48,6 +49,7 @@
     line-height: $text-line-height;
     text-align: center;
     vertical-align: middle;
+    text-decoration: none;
 
     background-color: $pink-color;
   }
@@ -91,6 +93,8 @@
 
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+    background-size: contain;
+
     left: 0;
     top: 5px;
   }
@@ -175,8 +179,8 @@
   }
 
   .user-post__likes::before {
-    left: unset;
-    top: unset;
+    left: auto;
+    top: auto;
     right: 5px;
     bottom: 5px;
   }
