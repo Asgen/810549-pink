@@ -7,6 +7,7 @@ var postcss = require("gulp-postcss");
 var csso = require("gulp-csso");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -43,6 +44,15 @@ gulp.task("css", function () {
    .pipe(server.stream());
 });
 
+gulp.task("images", function(){
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-editor-*.svg,logo-htmlacademy.svg,icon-heart.svg,icon-menu-burger.svg}")
