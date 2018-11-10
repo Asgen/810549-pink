@@ -7,27 +7,19 @@
   z-index: 10;
 
   &__logo {
-    width: 75px;
-    height: 22px;
     display: inline-block;
 
-    padding-left: 20px;
-    padding-bottom: 25px;
+    height: 23px;
 
-    background-image: url("../img/logo-pink-white-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
+    padding-left: 20px;
+    padding-bottom: 27px;
 
     cursor: pointer;
   }
 
-  &__logo:hover {
-    background-image: url("../img/logo-pink-white-mobile-hover.svg");
-  }
-
-  &__logo:active {
-    background-image: url("../img/logo-pink-white-mobile.svg");
-    opacity: 0.3;
+  &__logo-svg {
+    width: 74px;
+    height: 23px;
   }
 
   &__logo-image {
@@ -41,21 +33,15 @@
   }
 
   .page-header__logo {
+    height: 40px;
+    display: block;
+
+    padding-bottom: 45px;
+  }
+
+  .page-header__logo-svg {
     width: 147px;
     height: 40px;
-
-    padding-bottom: 42px;
-
-    background-image: url("../img/logo-pink-white-tablet.svg");
-  }
-
-  .page-header__logo:hover {
-    background-image: url("../img/logo-pink-white-tablet-hover.svg");
-  }
-
-  .page-header__logo:active {
-    background-image: url("../img/logo-pink-white-tablet.svg");
-    opacity: 0.3;
   }
 }
 
@@ -69,21 +55,6 @@
   .page-header__logo {
     position: absolute;
 
-    width: 147px;
-    height: 40px;
-
     padding-left: 130px;
-    padding-bottom: 42px;
-
-    background-image: url("../img/logo-pink-white-desktop.svg");
-  }
-
-  .page-header__logo:hover {
-    background-image: url("../img/logo-pink-white-desktop-hover.svg");
-  }
-
-  .page-header__logo:active {
-    background-image: url("../img/logo-pink-white-desktop.svg");
-    opacity: 0.3;
   }
 }

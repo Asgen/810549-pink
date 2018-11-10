@@ -43,6 +43,19 @@
     height: 43px;
   }
 
+  &__ico {
+    fill: $opacity-color;
+  }
+
+  &__ico:hover {
+    fill: $opacity-color-05;
+  }
+
+  &__ico--active,
+  &__ico--active:hover {
+    fill: $pink-color;
+  }
+
   &__input {
     display: none;
   }
@@ -145,26 +158,16 @@
     border-bottom: 1px solid $opacity-color-1;
   }
 
-  .app__object {
-    width: 22px;
-    height: 22px;
-  }
-
-  .app__object--fill {
-    width: 24px;
-    height: 24px;
-  }
-
-  .app__object--contrast {
-    width: 16px;
-    height: 16px;
-  }
-
   .app__label {
     width: 24px;
     height: 22px;
 
     margin-right: 30px;
+  }
+
+  .app__ico--contrast {
+    width: 25px;
+    height: 16px;
   }
 
   .app__input {
@@ -206,26 +209,17 @@
     padding: 0;
   }
 
-  .app__object {
-    width: 42px;
-    height: 42px;
-  }
-
-  .app__object--fill {
-    width: 48px;
-    height: 48px;
-  }
-
-  .app__object--contrast {
-    width: 41px;
-    height: 32px;
-  }
-
   .app__label {
     width: 48px;
 
     margin-right: 44px;
   }
+
+  .app__ico--contrast {
+    width: 45px;
+    height: 32px;
+  }
+
 
   .app__input {
     width: 288px;
