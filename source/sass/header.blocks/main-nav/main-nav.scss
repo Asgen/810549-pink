@@ -16,18 +16,22 @@
     font-size: 0;
 
     border: 0;
+
     background-color: transparent;
-    background-image: url("../img/icon-menu-burger.svg");
 
     cursor: pointer;
   }
 
-  &__toggle:hover {
-    background-image: url("../img/icon-menu-burger-pink.svg");
+  &__toggle-ico {
+    fill: $white-color;
   }
 
-  &__toggle:active {
-    opacity: 0.3;
+  &__toggle-ico:hover {
+    fill: $pink-color;
+  }
+
+  &__toggle-ico:active {
+    fill: $pink-transparent;
   }
 }
 

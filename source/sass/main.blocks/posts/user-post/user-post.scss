@@ -84,16 +84,10 @@
     text-transform: uppercase;
   }
 
-  &__likes::before {
-    content: "";
+  &__heart-ico {
     position: absolute;
 
-    width: 13px;
-    height: 13px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    fill: $pink-color;
 
     left: 0;
     top: 5px;
@@ -178,11 +172,18 @@
     align-items: flex-end;
   }
 
-  .user-post__likes::before {
+  .user-post__heart-ico {
+    right: 5px;
     left: auto;
     top: auto;
-    right: 5px;
     bottom: 5px;
+  }
+
+  .user-post__heart-ico--panorama {
+    right: 1px;
+    top: 7px;
+    left: auto;
+    bottom: auto;
   }
 
   .user-post__likes--panorama {
@@ -197,15 +198,19 @@
   }
 
   .user-post:first-of-type {
-    width: 1200px;
-
+    width: 960px;
     margin-bottom: 50px;
-    margin-left: -130px;
+    margin-left: -10px;
+  }
+
+  .user-post__image--panorama {
+    width: auto;
+    margin-left: -120px;
   }
 
   .user-post__link--panorama::before {
     top: 54px;
-    right: 130px;
+    right: 10px;
   }
 
   .user-post__blockquote {
@@ -213,7 +218,7 @@
   }
 
   .user-post__blockquote--panorama {
-    margin: 0 130px;
+    margin: 0 10px;
     padding-bottom: 23px;
   }
 }
