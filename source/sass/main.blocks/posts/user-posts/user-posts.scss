@@ -16,6 +16,8 @@
 
 @media (min-width: $desktop-width) {
   .user-posts {
-    padding: 0 130px;
+    padding: 0 10px;
+
+    overflow: hidden;
   }
 }

@@ -164,6 +164,29 @@
   border-bottom-color: $main-color;
 }
 
+.slider__cell--heading--hit {
+  position: relative;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.slider__cell--heading--hit::before {
+  content: "Хит";
+  position: absolute;
+
+  left: 10px;
+  top: 15px;
+
+  font-size: $general-text-size;
+  line-height: $general-line-height;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transform: rotate(-45deg);
+}
+
 .slider__heading-price {
   font-size: $title-font-size;
   line-height: $heading-line-height;
@@ -297,6 +320,15 @@
     text-transform: uppercase;
   }
 
+  .slider__cell--heading--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .slider__cell--heading--hit::before {
+    left: 7px;
+    top: 7px;
+  }
+
   .slider__heading-price {
     font-size: $general-heading-size;
   }
@@ -342,7 +374,7 @@
   }
 
   .slider__slide {
-    width: 1200px;
+    width: 960px;
 
     position: relative;
   }
@@ -351,7 +383,7 @@
     display: block;
     position: absolute;
 
-    left: 130px;
+    left: 10px;
     bottom: 207px;
   }
 
@@ -359,7 +391,7 @@
     display: block;
     position: absolute;
 
-    left: 1048px;
+    right: 30px;
     bottom: 207px;
   }
 
@@ -404,7 +436,7 @@
   }
 
   .slider__text {
-    padding: 0 200px;
+    padding: 0 80px;
     padding-top: 184px;
   }
 
@@ -423,6 +455,15 @@
     padding-bottom: 16px;
 
     line-height: $title-line-height;
+  }
+
+  .slider__cell--heading--hit {
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .slider__cell--heading--hit::before {
+    left: 12px;
+    top: 12px;
   }
 
   .slider__heading-price {
