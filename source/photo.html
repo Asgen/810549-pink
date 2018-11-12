@@ -18,7 +18,7 @@
     </div>
 
     <header class="page-header">
-      <div class="content-container">
+      <div class="content-container content-container--desktop-flex">
         <a href="index.html" class="page-header__logo" aria-label="Логотип Pink">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="page-header__logo-svg" width="370" height="153">
             <style>
@@ -296,39 +296,41 @@
               <img class="app__image post-maker__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Снежная дорога">
             </picture>
             <div class="post-maker__wrapper">
-              <div class="app__filters post-filters">
-                <ul class="app__list">
-                  <li class="app__filter">
-                    <label class="app__label" for="range-cut">
-                      <svg class="app__ico app__ico--active" width="44" height="44">
-                        <use xlink:href="#icon-editor-crop"></use>
-                      </svg>
-                      <span class="visually-hidden">Обрезка</span>
-                    </label>
-                    <input class="app__input app__input--active " type="range" id="range-cut" min="0" max="20" step="17">
-                  </li>
-                  <li class="app__filter">
-                    <label class="app__label" for="range-fill">
-                      <svg class="app__ico" width="48" height="43">
-                        <use xlink:href="#icon-editor-fill"></use>
-                      </svg>
-                      <span class="visually-hidden">Заливка</span>
-                    </label>
-                    <input class="app__input" type="range" id="range-fill">
-                  </li>
-                  <li class="app__filter">
-                    <label class="app__label" for="range-contrast">
-                      <svg class="app__ico app__ico--contrast" width="42" height="32">
-                        <use xlink:href="#icon-editor-contrast"></use>
-                      </svg>
-                      <span class="visually-hidden">Контрастность</span>
-                    </label>
-                    <input class="app__input" type="range" id="range-contrast">
-                  </li>
-                </ul>
-              </div>
-              <button class="app__button button" type="button">Запостить</button>
-              <button class="app__button button" type="button">Отмена</button>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <div class="app__filters post-filters">
+                  <ul class="app__list">
+                    <li class="app__filter">
+                      <label class="app__label" for="range-cut">
+                        <svg class="app__ico app__ico--active" width="44" height="44">
+                          <use xlink:href="#icon-editor-crop"></use>
+                        </svg>
+                        <span class="visually-hidden">Обрезка</span>
+                      </label>
+                      <input class="app__input app__input--active " type="range" id="range-cut" min="0" max="20" step="17">
+                    </li>
+                    <li class="app__filter">
+                      <label class="app__label" for="range-fill">
+                        <svg class="app__ico" width="48" height="43">
+                          <use xlink:href="#icon-editor-fill"></use>
+                        </svg>
+                        <span class="visually-hidden">Заливка</span>
+                      </label>
+                      <input class="app__input" type="range" id="range-fill">
+                    </li>
+                    <li class="app__filter">
+                      <label class="app__label" for="range-contrast">
+                        <svg class="app__ico app__ico--contrast" width="42" height="32">
+                          <use xlink:href="#icon-editor-contrast"></use>
+                        </svg>
+                        <span class="visually-hidden">Контрастность</span>
+                      </label>
+                      <input class="app__input" type="range" id="range-contrast">
+                    </li>
+                  </ul>
+                </div>
+                <input type="submit" class="app__button button" value="Запостить">
+                <input type="reset" class="app__button button" value="Отмена">
+              </form>
             </div>
           </div>
         </div>

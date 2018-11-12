@@ -22,4 +22,9 @@
 
     position: relative;
   }
+
+  .content-container--desktop-flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }
